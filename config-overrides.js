@@ -6,7 +6,6 @@ module.exports = function override(config) {
         'assets' : 'src/assets',
         'pages' : 'src/pages',
         'utils' : 'src/utils',
-        'pageList' : 'src/components/pageList',
     })(config)
     
     return config
