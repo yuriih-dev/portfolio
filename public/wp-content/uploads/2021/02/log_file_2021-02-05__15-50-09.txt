@@ -1,0 +1,34 @@
+
+---Downloaded files---
+The import files for: Demo Dekha were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/dekha
+Data file = C:\xampp\htdocs\dekha/wp-content/uploads/2021/02/demo-content-import-file_2021-02-05__15-50-09.xml
+Widget file = C:\xampp\htdocs\dekha/wp-content/uploads/2021/02/demo-widgets-import-file_2021-02-05__15-50-09.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Footer Left Sidebar : 
+
+Custom HTML - No Title - Imported
+
+Footer Right Sidebar : 
+
+Custom HTML - No Title - Imported
+
+
+
+---pt-ocdi/after_import---
+
