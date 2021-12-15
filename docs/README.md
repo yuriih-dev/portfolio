@@ -1,15 +1,34 @@
-# React - Apollo Typescript APP
+#### My Skills
 
+---
+|Languages      |Server Side Frameworks |Client Side Frameworks & Libraries |Mobile Native |Mobile Hybrid |Other Skills   |
+|---------------|-----------------------|-----------------------------------|--------------|--------------|---------------|
+| PHP           |Laravel                |jQuery                             |Android(java) |React Native  |Webpack
+| Javascript    |CodeIgniter            |VueJS                              |Swift         |Flutter       |Babel
+| HTML          |Nodejs                 |AlpineJS                           |              |              |npm
+| Java          |Java Spring            |ReactJS                            |              |              |Pod
+| Swift         |Expressjs              |AngularJS                          |              |              |Gradle
+| Objective-C   |                       |ThreeJS                            |              |              |Maven
+| CSS/SCSS      |                       |Bootstrap                          |              |              |Machine Learning
+| C/C++         |                       |                                   |              |              |Deep Learning
+| C#            |                       |                                   |              |              |Prisma
+| Blade         |
+| Python        |
+
+
+
+## React - Apollo Typescript APP
+---
 Created with CodeSandbox
 
-## Environment
+### Environment
 
 - Node 16.13.0
 - npm 8.1.4
 - yarn 1.22.4
 - PostgreSQL 14
 
-## Running the project
+### Running the project
 
 1. Download the project
 2. Running FrontEnd
@@ -23,7 +42,7 @@ Created with CodeSandbox
 - run `yarn prisma generate dev` to migrate database
 - run `yarn dev` to launch the apollo server
 
-## Project structure
+### Project structure
 
 ```
 |-- public
@@ -73,7 +92,7 @@ Created with CodeSandbox
 |- yarn.lock
 ```
 
-## 1. Get Started with React Typescript
+### 1. Get Started with React Typescript
 
 #### create react app with typescript [Learn more...](https://create-react-app.dev/docs/adding-typescript/)
 
@@ -83,7 +102,7 @@ npx create-react-app [APP_NAME] --template typescript
 yarn create react-app [] --template typescript
 ```
 
-## 2. Basic Configurations
+### 2. Basic Configurations
 
 - use @emotion/react for styling
 
@@ -133,7 +152,7 @@ export default function App() {
 }
 ```
 
-## 3. Setup React Redux & Redux Persist
+### 3. Setup React Redux & Redux Persist
 
 1. install npm packages
 
@@ -215,7 +234,7 @@ export default function App() {
 }
 ```
 
-## 4. Setup Apollo Server
+### 4. Setup Apollo Server
 
 - Use nodemon with typescript
 
@@ -247,14 +266,14 @@ config "prisma" on package.json
   }
 }
 ```
-## 5. Integration Spokestack API and Audio recording, Audio Visualization
+### 5. Integration Spokestack API and Audio recording, Audio Visualization
 
 install [spokestack](https://www.npmjs.com/package/spokestack) and [wav encoder](https://www.npmjs.com/package/wav-encoder/v/0.3.0) using yarn
 ```yarn
 yarn add spokestack web-encoder
 yarn add @types/web-encoder -D
 ```
-## 6. Integration Firebase using react-redux-firebase
+### 6. Integration Firebase using react-redux-firebase
 install firebase
 ```yarn
 yarn add firebase
@@ -271,7 +290,7 @@ REACT_APP_FIREBASE_APP_ID=
 REACT_APP_FIREBASE_MEASUREMENT_ID=
 ```
 
-## 7. use Google apis
+### 7. use Google apis
 - geocode api
 set google api key in env
 ```dotenv
@@ -282,5 +301,5 @@ install react geocode to use geocode api.
 yarn add react-geocode
 yarn add @types/react-geocode
 ```
-## 8. Deploy to GCP
+### 8. Deploy to GCP
 See app.yaml file
