@@ -1,104 +1,19 @@
 <html lang="en">
 <head>
-    <style>.gm-control-active > img {
-        box-sizing: content-box;
-        display: none;
-        left: 50%;
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%)
-    }
-
-    .gm-control-active > img:nth-child(1) {
-        display: block
-    }
-
-    .gm-control-active:hover > img:nth-child(1), .gm-control-active:active > img:nth-child(1), .gm-control-active:disabled > img:nth-child(1) {
-        display: none
-    }
-
-    .gm-control-active:hover > img:nth-child(2), .gm-control-active:active > img:nth-child(3), .gm-control-active:disabled > img:nth-child(4) {
-        display: block
-    }
-    </style>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans_old:400,500,700|Google+Sans+Text:400">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
-    <style>.gm-ui-hover-effect {
-        opacity: .6
-    }
-
-    .gm-ui-hover-effect:hover {
-        opacity: 1
-    }
-    </style>
-    <style>.gm-style .gm-style-cc a, .gm-style .gm-style-cc button, .gm-style .gm-style-cc span, .gm-style .gm-style-mtc div {
-        font-size: 10px;
-        box-sizing: border-box
-    }
-
-    .gm-style .gm-style-cc a, .gm-style .gm-style-cc button, .gm-style .gm-style-cc span {
-        outline-offset: 3px
-    }
-    </style>
-    <style>@media print {
-        .gm-style .gmnoprint, .gmnoprint {
-            display: none
-        }
-    }
-
-    @media screen {
-        .gm-style .gmnoscreen, .gmnoscreen {
-            display: none
-        }
-    }</style>
-    <style>.gm-style-moc {
-        background-color: rgba(0, 0, 0, 0.45);
-        pointer-events: none;
-        text-align: center;
-        transition: opacity ease-in-out
-    }
-
-    .gm-style-mot {
-        color: white;
-        font-family: Roboto, Arial, sans-serif;
-        font-size: 22px;
-        margin: 0;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%)
-    }
-    </style>
-    <style>.gm-style img {
-        max-width: none;
-    }
-
-    .gm-style {
-        font: 400 11px Roboto, Arial, sans-serif;
-        text-decoration: none;
-    }</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="bSGZiOa5ELoVhZL0Z3pX9xhQg0MpRZyDvoGtjhnE">
 
-    <title>Quality Picture Framing Service in Dublin - FrameExperts</title>
+    <title> Build Your Frame - FrameExperts</title>
     <link rel="icon" href="https://framexperts.com/assets/img/favicon.png">
 
-    <meta name="description" content="Our picture frame ranges are ideal for family, photographers &amp; artist framing. Solid wood frames are hand-finished by a professional. Order your frame today!">
-    <meta name="keywords" content="picture framing">
-    <link rel="canonical" href="https://framexperts.com">
+    <link rel="canonical" href="https://framexperts.com/build-your-frame">
 
-    <meta property="og:title" content="Framexperts - Quality Picture Framing Service in Dublin">
-    <meta property="og:description" content="Our picture frame ranges are ideal for family, photographers &amp; artist framing. Solid wood frames are hand-finished by a professional. Order your frame today!">
-    <meta property="og:url" content="https://framexperts.com">
+    <meta property="og:url" content="https://framexperts.com/build-your-frame">
 
-    <meta name="twitter:title" content="Framexperts - Quality Picture Framing Service in Dublin">
-    <meta name="twitter:description" content="Our picture frame ranges are ideal for family, photographers &amp; artist framing. Solid wood frames are hand-finished by a professional. Order your frame today!">
-    <meta name="twitter:url" content="https://framexperts.com">
+    <meta name="twitter:url" content="https://framexperts.com/build-your-frame">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -107,28 +22,320 @@
     <!-- Styles -->
     <link href="https://framexperts.com/assets/css/front.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://framexperts.com/assets/vendors/lightgallery/lightgallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" crossorigin="anonymous">
+
     <style>
-        .image-item {
+        .video-payer-modal {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            background-color: #0a0a0a7f;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .player-container {
             width: 100%;
-            height: 400px;
-            padding: 2px 2px;
+            height: 100%;
+            margin: auto;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .player {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            box-shadow: 0px 10px 0px -3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            background: #000000;
+        }
+
+        .player:fullscreen {
+            padding-bottom: 100vh;
+        }
+
+        .player:-webkit-full-screen {
+            padding-bottom: 100vh;
+        }
+
+        .player:-moz-full-screen {
+            padding-bottom: 100vh;
+        }
+
+        .player:-ms-fullscreen {
+            padding-bottom: 100vh;
+        }
+
+        .player video {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .controls {
+            padding: 0;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 48px;
+            box-sizing: border-box;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .time {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            display: flex;
+        }
+
+        .progress {
+            height: 8px;
+            width: 65%;
+            background: rgba(217, 217, 217, 0.6);
+            margin: auto;
+            border-radius: 6px;
+            left: 20px;
+            bottom: 100%;
+            transition: height 0.1s ease-in-out;
+        }
+
+        .progress:hover {
+            height: 10px;
+        }
+
+        .progress-filled {
+            background: var(--accent);
+            width: 0%;
+            height: 100%;
+            border-radius: 6px;
+            transition: all 0.1s;
+            background-color: red;
+        }
+
+        .controls-left,
+        .controls-right {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .controls-left {
+            margin-left: 10px;
+        }
+
+        .controls-right {
+            margin-right: 10px;
+            justify-content: space-around;
+        }
+
+        .volume {
+            display: flex;
+            align-items: center;
+        }
+
+        .volume-btn {
+            margin-right: 10px;
+        }
+
+        .volume-btn #volume-off, .volume-btn #volume-high {
+            opacity: 0;
+        }
+
+        .volume-btn.loud #volume-high {
+            opacity: 1;
+        }
+
+        .volume-btn.muted #volume-off {
+            opacity: 1;
+        }
+
+        .volume-btn.muted #volume-high, .volume-btn.muted #volume-low {
+            opacity: 0;
+        }
+
+        .volume-slider {
+            height: 8px;
+            width: 80px;
+            background: rgba(60, 60, 60, 0.6);;
+            border-radius: 6px;
             position: relative;
         }
 
-        .discover-more:hover {
-            color: #bea14b !important;
+        .volume-filled {
+            background: var(--main);
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            transition: width 0.2s ease-in-out;
         }
 
-        .discover-more:hover:link {
-            color: #bea14b !important;
+        .volume-filled:hover, .play-btn:hover.play-btn:before, .play-btn:hover.play-btn:after {
+            /*background: var(--accent);*/
         }
 
-        @media screen and (max-width: 1024px) {
-            .discover-more {
-                display: none !important;
-            }
+        button {
         }
+
+        .play-btn {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            margin: auto;
+            transform: rotate(-90deg) scale(0.8);
+            transition: -webkit-clip-path 0.3s ease-in 0.1s, shape-inside 0.3s ease-in 0.1s,
+            transform 0.8s cubic-bezier(0.85, -0.25, 0.25, 1.425);
+            cursor: pointer;
+        }
+
+        .play-btn.paused {
+            transform: rotate(0deg);
+        }
+
+        .play-btn:before,
+        .play-btn:after {
+            content: "";
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: inherit;
+        }
+
+        .play-btn:before {
+            -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 40%, 0 40%);
+            shape-inside: polygon(0 10%, 100% 10%, 100% 40%, 0 40%);
+        }
+
+        .play-btn:after {
+            -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 90%, 0 90%);
+            shape-inside: polygon(0 60%, 100% 60%, 100% 90%, 0 90%);
+        }
+
+        .play-btn.paused:before {
+            -webkit-clip-path: polygon(10% 0, 90% 51%, 90% 51%, 10% 51%);
+            shape-inside: polygon(0 0, 100% 51%, 100% 51%, 0 51%);
+        }
+
+        .play-btn.paused:after {
+            -webkit-clip-path: polygon(10% 49.5%, 80% 49.5%, 90% 49.5%, 10% 100%);
+            shape-inside: polygon(10% 49.5%, 80% 49.5%, 90% 49.5%, 10% 100%);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .speed-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .speed-list li {
+            color: var(--main);
+            padding: 5px;
+            cursor: default;
+        }
+
+        .speed-list li:hover,
+        .speed-list li.active {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .fullscreen {
+            display: flex;
+            justify-content: center;
+        }
+
+        .volume {
+            padding-top: 6px;
+            margin-left: 20px;
+        }
+
+        .volume .icon {
+            width: 24px;
+            height: 24px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1) rotate(-45deg);
+            cursor: pointer;
+            /* transition: all 0.4s ease-in-out; */
+        }
+
+        .volume .icon:hover {
+            transform: rotate(360deg) scale(1.2);
+        }
+
+        .video-payer-modal {
+            z-index: 100;
+        }
+
+        .video_modal_close_icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .thumb_video {
+            cursor: pointer;
+        }
+
+        .video-thumbnail {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        /*.video-thumbnail:before {*/
+        /*    position:absolute;*/
+        /*    top: 50%;*/
+        /*    left: 50%;*/
+        /*    transform: translate(-50%, -50%);*/
+        /*    -webkit-transform: translate(-50%, -50%);*/
+        /*    content: "\f01d";*/
+        /*    font-family: FontAwesome;*/
+        /*    font-size: 100px;*/
+        /*    color: #fff;*/
+        /*    opacity: .8;*/
+        /*    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);*/
+        /*}*/
+
+        /*.video-thumbnail:hover:before {*/
+        /*    color: #eee;*/
+        /*}*/
+        .video-start-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            text-align: center;
+            /*opacity: .8;*/
+        }
+
     </style>
 
     <!-- Facebook Pixel Code -->
@@ -3093,21 +3300,6 @@
     }</style>
     <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/common.js"></script>
     <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/util.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/map.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/marker.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/stats.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/onion.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d53.25253222305745&amp;2d-6.47678803642981&amp;2m2&amp;1d53.40016489153489&amp;2d-5.976741901264273&amp;2u14&amp;4sen-US&amp;5e0&amp;6sm%40585000000&amp;7b0&amp;8e0&amp;12e1&amp;13shttps%3A%2F%2Fframexperts.com%2F&amp;14b1&amp;callback=_xdc_._y1s56j&amp;key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;token=93732"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fframexperts.com%2F&amp;4sAIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;7m1&amp;1e0&amp;callback=_xdc_._yo64dp&amp;key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;token=125981"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i14!2i7904!3i5310!1m4!1m3!1i14!2i7904!3i5311!1m4!1m3!1i14!2i7905!3i5310!1m4!1m3!1i14!2i7905!3i5311!1m4!1m3!1i14!2i7906!3i5310!1m4!1m3!1i14!2i7906!3i5311!1m4!1m3!1i14!2i7907!3i5310!1m4!1m3!1i14!2i7907!3i5311!1m4!1m3!1i14!2i7908!3i5310!1m4!1m3!1i14!2i7908!3i5311!1m4!1m3!1i14!2i7909!3i5310!1m4!1m3!1i14!2i7909!3i5311!1m4!1m3!1i14!2i7910!3i5310!1m4!1m3!1i14!2i7910!3i5311!1m4!1m3!1i14!2i7911!3i5310!1m4!1m3!1i14!2i7911!3i5311!1m4!1m3!1i14!2i7912!3i5310!1m4!1m3!1i14!2i7912!3i5311!1m4!1m3!1i14!2i7904!3i5312!1m4!1m3!1i14!2i7904!3i5313!1m4!1m3!1i14!2i7905!3i5312!1m4!1m3!1i14!2i7905!3i5313!1m4!1m3!1i14!2i7904!3i5314!1m4!1m3!1i14!2i7905!3i5314!1m4!1m3!1i14!2i7906!3i5312!2m3!1e0!2sm!3i585311234!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjF8cy5lOmwudC5mfHAuYzojZmY1NTU1NTUscy50OjE3fHAudjpvbixzLnQ6MTd8cy5lOmcuc3xwLnc6MC40MCxzLnQ6MTd8cy5lOmwudHxwLnY6b258cC5zOi00MCxzLnQ6MTd8cy5lOmwudC5mfHAuYzojZmYzMzMzNjYscy50OjE3fHMuZTpsLnQuc3xwLmg6I2ZmMDAwMHxwLnY6b2ZmLHMudDoxOHxwLnY6b2ZmLHMudDoxOXxwLnY6b24scy50OjIwfHAudjpvZmYscy50OjIxfHAudjpvZmYscy50OjV8cC5jOiNmZmZmZmZmZixzLnQ6ODF8cC52Om9mZixzLnQ6ODJ8cC52Om9uLHMudDoyfHAudjpvZmYscy50OjN8cC5zOi0xMDB8cC5sOjQ1fHAudzoxLjI1fHAudjpvbixzLnQ6NDl8cC52OnNpbXBsaWZpZWQscy50OjUwfHMuZTpsLml8cC52Om9mZixzLnQ6NHxwLnY6b2ZmLHMudDo2fHAudjpvbnxwLmM6I2ZmZGRkY2Rj!4e3!12m1!5b1&amp;callback=_xdc_._8xr0px&amp;key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;token=19607"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i14!2i7906!3i5313!1m4!1m3!1i14!2i7907!3i5312!1m4!1m3!1i14!2i7907!3i5313!1m4!1m3!1i14!2i7906!3i5314!1m4!1m3!1i14!2i7907!3i5314!1m4!1m3!1i14!2i7908!3i5312!1m4!1m3!1i14!2i7908!3i5313!1m4!1m3!1i14!2i7909!3i5312!1m4!1m3!1i14!2i7909!3i5313!1m4!1m3!1i14!2i7908!3i5314!1m4!1m3!1i14!2i7909!3i5314!1m4!1m3!1i14!2i7910!3i5312!1m4!1m3!1i14!2i7910!3i5313!1m4!1m3!1i14!2i7911!3i5312!1m4!1m3!1i14!2i7911!3i5313!1m4!1m3!1i14!2i7910!3i5314!1m4!1m3!1i14!2i7911!3i5314!1m4!1m3!1i14!2i7912!3i5312!1m4!1m3!1i14!2i7912!3i5313!1m4!1m3!1i14!2i7912!3i5314!2m3!1e0!2sm!3i585311234!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjF8cy5lOmwudC5mfHAuYzojZmY1NTU1NTUscy50OjE3fHAudjpvbixzLnQ6MTd8cy5lOmcuc3xwLnc6MC40MCxzLnQ6MTd8cy5lOmwudHxwLnY6b258cC5zOi00MCxzLnQ6MTd8cy5lOmwudC5mfHAuYzojZmYzMzMzNjYscy50OjE3fHMuZTpsLnQuc3xwLmg6I2ZmMDAwMHxwLnY6b2ZmLHMudDoxOHxwLnY6b2ZmLHMudDoxOXxwLnY6b24scy50OjIwfHAudjpvZmYscy50OjIxfHAudjpvZmYscy50OjV8cC5jOiNmZmZmZmZmZixzLnQ6ODF8cC52Om9mZixzLnQ6ODJ8cC52Om9uLHMudDoyfHAudjpvZmYscy50OjN8cC5zOi0xMDB8cC5sOjQ1fHAudzoxLjI1fHAudjpvbixzLnQ6NDl8cC52OnNpbXBsaWZpZWQscy50OjUwfHMuZTpsLml8cC52Om9mZixzLnQ6NHxwLnY6b2ZmLHMudDo2fHAudjpvbnxwLmM6I2ZmZGRkY2Rj!4e3!12m1!5b1&amp;callback=_xdc_._d1bywl&amp;key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;token=30615"></script>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttps%3A%2F%2Fframexperts.com%2F&amp;3sAIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;7s74gz9l&amp;10e1&amp;callback=_xdc_._4g4lo0&amp;key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;token=43474"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/3/controls.js"></script>
 </head>
 <body>
 <div id="app">
@@ -3247,231 +3439,430 @@
                             src="https://framexperts.com/assets/img/icons/linkedin.svg" alt="" class="height-30 mr-2"></a></div>
             </div>
         </div>
-        <div class="vh-100 home_hero position-relative d-flex align-items-center">
-            <div class="w-100">
-                <div class="container mw-1450">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block"></div>
-                            <div class="col-lg-6 home_section1_left"><h1 class="text_h1 mt-0 mt-lg-5 text-uppercase text-theme text-center text-lg-left fw-900 md-text-center">Framing</h1>
-                                <h2 class="text_h2 text-theme fw-300 text-center text-lg-left md-text-center">It's what we do</h2>
-                                <p class="d-none d-lg-flex text-theme fw-300 text_p">Preserve your memories and inspirations or find the perfect frame for your most precious photos, watercolours, silkscreen print, vintage posters and much
-                                    more – the options are endless!</p>
-                                <div class="height-240 d-lg-none d-block"></div>
-                                <div class="d-flex mt-4 justify-content-center justify-content-lg-start"><a href="https://framexperts.com/build-your-frame" class="d-inline-block btn-theme text-uppercase">Order My Frame Now</a> <a
-                                        href="#welcome_to_section" class="d-flex ml-auto text-uppercase fw-400 fs-24 text-theme underline align-items-center md-d-none scroll_to_next discover-more"><span>Discover More</span></a></div>
+        <div class="min-vh-100 position-relative d-flex align-items-center bg-white frame-builder">
+            <div class="w-100 position-relative">
+                <div class="container mw-1450"><!---->
+                    <div class="row">
+                        <div class="w-100 d-md-none"><h2 class="txt-frame-builder">Frame Builder</h2>
+                            <p class="text-order-your-frame">Upload, preview and order your frame!</p></div>
+                        <div class="col-lg-6">
+                            <div class="frame-container align-self-center d-flex flex-column">
+                                <div class="d-flex flex-column px-3">
+                                    <div class="text-center">
+                                        <div class="frame_preview_area" style="border-width: 16.7969px; border-color: rgb(0, 0, 0); padding: 1.11979in; width: calc(675px); height: calc(531.667px);">
+                                            <div refresh="true" class="frame_preview_inline_wrapper">
+                                                <div class="frame-preview-wrapper h" style="align-items: center">
+                                                    <div class="photo-preview-content" data-photo-id="0" style="width: 4.479166666666667in; height: 2.986111111111111in;">
+                                                        <form id="drag-file-0" method="post" action="" class="drag-drop" enctype="multipart/form-data" novalidate=""><label class="upload_div"> <img id="frame_image0"
+                                                                                                                                                                                                     style="width: 0px; height: 0px; top: 0px; left: 0px;">
+                                                            <div class="preview_label_area label_area" id="preview_label0"><span class="text-theme"> Upload </span> <span class="text-theme fw-300 d-none d-sm-block">Only .png or .jpg | up to 10mb</span>
+                                                                <span class="text-theme">6x4 inches</span><input type="file" class="file+key" onchange="window['filePreview0'](event)" accept=".jpg,.jpeg,.png" hidden=""></div>
+                                                            <div onclick="window['handleFlip0'](event)" class="flip_photo text-theme text_p4">Flip Photo View</div>
+                                                        </label></form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="color-select-sectopm text-center mt-4">
+                                <div class="color-select-wrapper"><span class="wall_color_text">
+                        Wall Colour
+                    </span>
+                                    <div class="color-choices">
+                                        <div><input id="choice-1" name="choice" type="radio"> <label for="choice-1"></label></div>
+                                        <div><input id="choice-2" name="choice" type="radio"> <label for="choice-2"></label></div>
+                                        <div><input id="choice-3" name="choice" type="radio"> <label for="choice-3"></label></div>
+                                        <div><input id="choice-4" name="choice" type="radio"> <label for="choice-4"></label></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-12"><h2 class="text_h2 text-second text-center fw-300 d-none d-lg-block">Frame Builder</h2>
+                                    <p class="text_h5 text-theme text-center fw-300 d-none d-lg-block">Upload, preview and order
+                                        your frame!</p>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 d-none d-lg-block"></div>
+                                        <div class="col-12 col-lg-8">
+                                            <div class="w-100 text-center text-lg-right"><span class="text-theme fw-300 text_p4 mr-2">Milimetres(mm)</span> <label class="custom_switch"><input type="checkbox" checked="checked"> <span
+                                                    class="custom_slider custom_round"></span></label> <span class="text-second fw-300 text_p4 ml-2">Inches(in)</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-area">
+                                    <ul class="nav flex-row d-lg-none">
+                                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link  active">How Many Photos</a></li>
+                                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Frame
+                                            Orientation</a></li>
+                                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Size of Frame</a></li>
+                                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Frame Colour</a></li>
+                                    </ul>
+                                    <div class="col-12">
+                                        <div class="row mt-4">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">No. Of Photos:</span></div>
+                                            <div class="col-12 col-lg-8 responsive-tab-item  active">
+                                                <div class="w-100 position-relative area-photo-number"><input type="range" min="1" max="5" step="1" class="w-100">
+                                                    <div class="d-flex justify-content-between txt-photo-number"><span class="text-theme fw-300">1</span><span class="text-theme fw-300">2</span><span class="text-theme fw-300">3</span><span
+                                                            class="text-theme fw-300">4</span><span class="text-theme fw-300">7</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 responsive-tab-item">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Orientation:</span></div>
+                                            <div class="col-8">
+                                                <div class="w-100"><span class="orient  active style1"></span><span class="orient   style2"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 responsive-tab-item">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Photo Set Up:</span></div>
+                                            <div class="col-8 d-flex align-items-center">
+                                                <div class="ml-3">
+                                                    <div class="set-up-wrapper active">
+                                                        <div class="set-up-wrapper h">
+                                                            <div class="set-up-item h"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 responsive-tab-item">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Size of Frame:</span></div>
+                                            <div class="col-lg-8">
+                                                <div class="width-100"><select refresh="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                                                                               class="select_size_input">
+                                                    <option value="1">
+                                                        9"x7"(Photo Size: 6"x4")
+                                                    </option>
+                                                    <option value="23">
+                                                        10"x8"(Photo Size: 7"x5")
+                                                    </option>
+                                                    <option value="25">
+                                                        11"x9"(Photo Size: 8"x6")
+                                                    </option>
+                                                    <option value="27">
+                                                        14"x12"(Photo Size: 10"x8")
+                                                    </option>
+                                                    <option value="29">
+                                                        16"x14"(Photo Size: 12"x10")
+                                                    </option>
+                                                    <option value="32">
+                                                        21"x17"(Photo Size: 16"x12")
+                                                    </option>
+                                                    <option value="34">
+                                                        25"x21"(Photo Size: 20"x16")
+                                                    </option>
+                                                    <option value="36">
+                                                        29"x25"(Photo Size: 24"x20")
+                                                    </option>
+                                                    <option value="38">
+                                                        33"x29"(Photo Size: 28"x24")
+                                                    </option>
+                                                </select></div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 responsive-tab-item">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Frame Colour:</span></div>
+                                            <div class="col-lg-8">
+                                                <div class="width-100 d-flex flex-row">
+                                                    <div data-image="/assets/img/builder/color_preview/1.png" class="ml-1 color-thumb-panel" style="width: 50px; text-align: center; line-height: 12px;"><span
+                                                            class="frame_color_choose m-1 active" style="background-color: rgb(0, 0, 0);"></span><br> <span style="font-size: 12px; font-weight: 400; letter-spacing: 0px;">Black</span></div>
+                                                    <div data-image="/assets/img/builder/color_preview/2.png" class="ml-1 color-thumb-panel" style="width: 50px; text-align: center; line-height: 12px;"><span class="frame_color_choose m-1"
+                                                                                                                                                                                                               style="background-color: rgb(84, 84, 84);"></span><br>
+                                                        <span style="font-size: 12px; font-weight: 400; letter-spacing: 0px;">Dark Grey</span></div>
+                                                    <div data-image="/assets/img/builder/color_preview/3.png" class="ml-1 color-thumb-panel" style="width: 50px; text-align: center; line-height: 12px;"><span class="frame_color_choose m-1"
+                                                                                                                                                                                                               style="background-color: rgb(161, 161, 161);"></span><br>
+                                                        <span style="font-size: 12px; font-weight: 400; letter-spacing: 0px;">Light Grey</span></div>
+                                                    <div data-image="/assets/img/builder/color_preview/4.png" class="ml-1 color-thumb-panel" style="width: 50px; text-align: center; line-height: 12px;"><span class="frame_color_choose m-1"
+                                                                                                                                                                                                               style="background-color: rgb(248, 248, 248);"></span><br>
+                                                        <span style="font-size: 12px; font-weight: 400; letter-spacing: 0px;">White</span></div>
+                                                    <div data-image="/assets/img/builder/color_preview/5.png" class="ml-1 color-thumb-panel" style="width: 50px; text-align: center; line-height: 12px;"><span class="frame_color_choose m-1"
+                                                                                                                                                                                                               style="background-color: rgba(253, 237, 221, 0.76);"></span><br>
+                                                        <span style="font-size: 12px; font-weight: 400; letter-spacing: 0px;">Ash Raw</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 d-none d-lg-flex">
+                                            <div class="col-lg-4 d-none d-lg-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Mount Size:</span></div>
+                                            <div class="col-8 d-none d-lg-block">
+                                                <div class="w-100 mount-size">
+                                                    1.5 (inches)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row mt-0 mt-lg-4">
+                                        <div class="col-lg-4 d-none d-xl-block"><img src="" alt="" class="question_circle mr-2 mb-2"> <span class="text_p1 text-theme fw-300">Glass Type:</span></div>
+                                        <div class="col-12 col-lg-8 btn-add-to-cart">
+                                            <div class="width-100 d-flex flex-row">
+                                                <div class="material-switch pull-right"><span class="anti-glass gold-color">Normal Glass</span> <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox"
+                                                                                                                                                       checked="checked"> <label for="someSwitchOptionDefault" class="label-default"></label>
+                                                    <span class="normal-glass">Anti-Reflective Glass</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-0 mt-lg-4">
+                                        <div class="col-lg-4 d-none d-xl-block"></div>
+                                        <div class="col-12 col-lg-8 btn-add-to-cart">
+                                            <div class="w-100 br-3 overflow-hidden pl-3">
+                                                <div class="custom-control custom-checkbox mb-2 mr-sm-3 mt-2 text builder-checkbox-area"><input type="checkbox" id="inlineForm-customCheck" class="custom-control-input"> <label
+                                                        for="inlineForm-customCheck" class="custom-control-label">
+                                                    I agree to the website
+                                                    <a href="#" class="gold-color">terms and conditions</a></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-0 mt-lg-4">
+                                        <div class="col-lg-4 d-none d-xl-block"></div>
+                                        <div class="col-12 col-lg-8 btn-add-to-cart">
+                                            <div class="product_detail_total w-100 br-3 overflow-hidden">
+                                                <div class="bg-third text-theme p-3 detail_total_top">
+                                                    <div class="w-100 d-flex justify-content-center justify-content-md-between align-items-center"><span class="h2 lh-20 font-weight-bold">
+                                            Total:
+                                        </span> <span class="h2">
+                                            €55.76
+                                            </span></div>
+                                                    <div class="w-100 d-flex justify-content-center justify-content-md-start"><span class="text_p3 text-center text-md-left">Incl. 23% VAT</span></div>
+                                                </div>
+                                                <div class="bg-theme text-uppercase p-3 text-center text_p1 fw-300 text-white add_to_basket h-cursor mb-5"><img src="/assets/img/icons/cart_white.png" alt="" class="width-28 mr-1 mb-1"> Add to
+                                                    basket
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="position-absolute bottom-50 md-bottom-10 w-100 no-pointer-events" style="pointer-events: none;">
-                    <div class="px-3 no-pointer-events" style="pointer-events: none;">
-                        <div class="d-flex justify-content-between align-items-baseline maxw-limit1 m-auto no-pointer-events" style="pointer-events: none;">
-                            <div class="d-block d-md-none"></div>
-                            <div class="mt-auto"><img src="https://framexperts.com/assets/img/premium.png" alt="" class="premium_image"></div>
-                            <a href="#home_section_2" class="mt-auto p-2 h-cursor h-none scroll_to_next d-none d-md-block"><img src="https://framexperts.com/assets/img/icons/down-arrow.svg" alt="" style="width: 30px; height: 30px;"></a>
+                <div class="position-absolute visual-icon-wrapper d-none d-md-block">
+                    <div data-title="Have you Tried Our Room Visualizer Tool yet" class="d-block visual-icon-svg-div mb-3"><img src="/assets/img/builder/cube.png" alt="..." class="visual-icon"> <!----></div>
+                    <div class="d-block visual-icon-svg-div mb-3"><img src="/assets/img/builder/cert.png" alt="..." class="visual-icon"> <!----></div>
+                    <div class="d-block visual-icon-svg-div"><img src="/assets/img/builder/faq.png" alt="..." class="visual-icon"> <!----></div>
+                </div>
+                <div data-v-009baaf7="" class="modal-mask" style="display: none;">
+                    <div data-v-009baaf7="" class="modal-wrapper ">
+                        <div data-v-009baaf7="" class="modal-container container">
+                            <div data-v-009baaf7="" class="modal-header">
+                                <div data-v-009baaf7="" class="header-text-area text-center color-gold"><span data-v-009baaf7=""></span></div>
+                                <div data-v-009baaf7="" class="btn-close"></div>
+                            </div>
+                            <div data-v-009baaf7="" class="modal-body" style="pointer-events: none !important;">
+                                <div data-v-009baaf7="" class="frame-render-preview-container">
+                                    <div data-v-009baaf7="" style="position: absolute; transform: scale(0.4); margin-bottom: 35%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="home_section_2" class="home_second bg-second py-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="text-center px-2 maxw-400 m-auto d-flex h-100  flex-column">
-                            <div class="height-50 d-flex align-items-center"><img src="https://framexperts.com/assets/img/icons/quality.png" alt="" class="w-50px m-auto"></div>
-                            <div class="mt-2"><p class="text_p text-uppercase fw-400 text-white">Quality Framing</p></div>
-                            <div class="align-items-center"><p class="text_p2 text-white fw-300 d-none d-md-block">
-                                Our staff have specific training in home decor, archival &amp; conservation framing and handling methods for valuable or fragile artwork
-                            </p></div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="text-center px-2 maxw-400 m-auto d-flex h-100 flex-column">
-                            <div class="height-50 d-flex align-items-center"><img src="https://framexperts.com/assets/img/icons/delivery.png" alt="" class="w-50px m-auto"></div>
-                            <div class="mt-2"><p class="text_p text-uppercase fw-400 text-white">FAST DELIVERY</p></div>
-                            <div class="align-items-center"><p class="text_p2 text-white fw-300 d-none d-md-block">
-                                No time to call in? We offer fast pick-up and delivery service, guaranteeing safe handling and transportation of your work.
-                            </p></div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="text-center px-2 maxw-400 m-auto d-flex h-100 flex-column">
-                            <div class="d-flex height-50 align-items-center"><img src="https://framexperts.com/assets/img/icons/payment.png" alt="" class="w-50px m-auto"></div>
-                            <div class="mt-2"><p class="text_p text-uppercase fw-400 text-white">SECURE PAYMENTS</p></div>
-                            <div class="align-items-center"><p class="text_p2 text-white fw-300 d-none d-md-block">
-                                We trust Stripe, which has been audited by a PCI-certified auditor &amp; is certified to PCI Service Provider Level 1. This is the most stringent level of certification available.
-                            </p></div>
+                <div data-v-de46749e="" class="modal-mask" style="display: none;">
+                    <div data-v-de46749e="" class="modal-wrapper ">
+                        <div data-v-de46749e="" class="modal-container container mw-1450">
+                            <div data-v-de46749e="" class="modal-header padding-top-0">
+                                <div data-v-de46749e="" class="header-text-area text-center d-block color-gold w-100">
+                                    <div data-v-de46749e="" class="main-heading">
+                                        Frequently Asked Questions
+                                    </div>
+                                    <div data-v-de46749e="" class="main-heading-description">
+                                        Here are some frequently asked questions about the Frame Builder
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="btn-close"></div>
+                            </div>
+                            <div data-v-de46749e="" class="d-block">
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        Can I get my photos printed in colour or black and white?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        Yes, you can add instructions like that in the comment box.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        Can I have a wider or narrower mount around my image?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        Yes, you can add instructions like that in the comment box.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        Do you have a different profile/colour frame available?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        We have selected the most contemporary frames for the FrameBuilder, however, if you prefer a different frame, you can write a description of it in the comment box and we will get back to you with
+                                        availability.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        I already have a printed photo/s, can I still use the FrameBuilder?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        This great tool is designed for professionally print and frame your beautiful memories. If you already have your prints then just send us an email to hello@framexperts.com to get your quotation for
+                                        framing.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        What is the earliest I can get my order delivered?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        We advise you to allow a minimum of two weeks for your order to be shipped. You can opt to collect from our studio in Ranelagh in just 2-3 days!
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        How long does shipping take?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        Usually about a week. In some countries it takes a little longer.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        Is my frame(s) ready to be installed?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        Yes, we put appropriate cord, wire or hanging fittings at the back.
+                                    </div>
+                                </div>
+                                <div data-v-de46749e="" class="body-description-div">
+                                    <div data-v-de46749e="" class="gold-description">
+                                        Do you ship internationally?
+                                    </div>
+                                    <div data-v-de46749e="" class="black-description">
+                                        We ship to most countries around the world.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="welcome_to_section" class="min-vh-100 home_third  position-relative d-flex align-items-center">
-            <div class="container mw-1450">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ml-auto mb-5 text-center text-lg-left"><h1 class="text_h1 mt-5 text-uppercase text-theme fw-900 text-center text-lg-left">Welcome</h1>
-                                <h2 class="text_h2 text-theme fw-300  text-center text-lg-left">to Frame Experts</h2> <br>
-                                <div class="d-block d-lg-none justify-content-center w-100"><img src="https://framexperts.com/assets/img/home_img1.png" alt="" class="width-60 width-sm-120 mb-3"></div>
-                                <p class="text-theme  fw-300 text_p">
-                                    Since 1973, we've been providing custom framing services to photographers, artists, sport fans and more. Choosing the right picture frame can make a big difference when showcasing your valuable treasures.
-
-                                    <br><br>
-
-                                    At framexperts we use our knowledge and experience to ensure that your piece of art is displayed at its best. With hundreds of unique moulding styles we truly have something to offer for every customer no
-                                    matter the budget.
-
-                                    <br><br>
-                                    All custom framing is done by hand in our Studio using the highest quality materials. Your pictures and memorabilia deserve the attention and care we can provide, so they can be enjoyed for generations.
-                                </p> <br><br> <a href="https://framexperts.com/build-your-frame" class="d-inline-block btn-theme fs-24 md-fs-16 fw-300 text-uppercase">Order My Frame Now</a></div>
+                <div data-v-b50f6b8e="" class="modal-mask" style="display: none;">
+                    <div data-v-b50f6b8e="" class="modal-wrapper ">
+                        <div data-v-b50f6b8e="" class="modal-container container mw-1450">
+                            <div data-v-b50f6b8e="" class="modal-header padding-top-0">
+                                <div data-v-b50f6b8e="" class="header-text-area text-center d-block color-gold w-100">
+                                    <div data-v-b50f6b8e="" class="main-heading"><img data-v-b50f6b8e="" src="/assets/img/builder/assurance-gold.png" alt=".." class="heading-image mr-5"> <span data-v-b50f6b8e="">Quality Assurance</span>
+                                    </div>
+                                    <div data-v-b50f6b8e="" class="main-heading-description">
+                                        Here is a brief description of the great materials we use to make your frame.
+                                    </div>
+                                </div>
+                                <div data-v-b50f6b8e="" class="btn-close"></div>
+                            </div>
+                            <div data-v-b50f6b8e="" class="d-block">
+                                <div data-v-b50f6b8e="" class="content-wrapper">
+                                    <div data-v-b50f6b8e="" class="d-flex mb-3">
+                                        <div data-v-b50f6b8e="" class="mr-5 cert-image-thumb-wrapper"><img data-v-b50f6b8e="" src="/assets/img/builder/assurance/cert1_thumb.png" alt="..." class="cert-image-thumb"></div>
+                                        <div data-v-b50f6b8e="" class="body-description-div">
+                                            <div data-v-b50f6b8e="" class="gold-description text-capitalize">
+                                                Quality Solid Wood Frames
+                                            </div>
+                                            <div data-v-b50f6b8e="" class="black-description">
+                                                Choose from our specially selected range of quality solid wood mouldings to create your perfect frame. Contemporary colours with a subtle wood grain visible give these mouldings a unique
+                                                natural feel. Measuring 22mm on the face and 22mm deep.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-b50f6b8e="" class="d-flex mb-3">
+                                        <div data-v-b50f6b8e="" class="mr-5 cert-image-thumb-wrapper"><img data-v-b50f6b8e="" src="/assets/img/builder/assurance/cert2_thumb.png" data-src="/assets/img/builder/assurance/cert2.png" alt="..."
+                                                                                                           class="cert-image-thumb"></div>
+                                        <div data-v-b50f6b8e="" class="body-description-div">
+                                            <div data-v-b50f6b8e="" class="gold-description text-capitalize">
+                                                Conservation White Core Mountboard
+                                            </div>
+                                            <div data-v-b50f6b8e="" class="black-description">
+                                                Our mountboards are 100% Conservation quality that will not discolour with age and is bleed resistant, pure White bevel that stays white.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-b50f6b8e="" class="d-flex mb-3">
+                                        <div data-v-b50f6b8e="" class="mr-5 cert-image-thumb-wrapper"><img data-v-b50f6b8e="" src="/assets/img/builder/assurance/cert3_thumb.png" data-src="/assets/img/builder/assurance/cert3.png" alt="..."
+                                                                                                           class="cert-image-thumb"></div>
+                                        <div data-v-b50f6b8e="" class="body-description-div">
+                                            <div data-v-b50f6b8e="" class="gold-description text-capitalize">
+                                                Our Printer, Ink &amp; Paper
+                                            </div>
+                                            <div data-v-b50f6b8e="" class="black-description">
+                                                UltraChrome HDX pigment inks: Delivers highly-accurate colours with 98% of Pantone®, Ensuring consistent results and high-quality, reliable output with superior lightfastness: Prints on our
+                                                Premium Photosatin Paper can last up to 60 years.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-b50f6b8e="" class="d-flex mb-3">
+                                        <div data-v-b50f6b8e="" class="mr-5 cert-image-thumb-wrapper"><img data-v-b50f6b8e="" src="/assets/img/builder/assurance/cert4_thumb.png" data-src="/assets/img/builder/assurance/cert4.png" alt="..."
+                                                                                                           class="cert-image-thumb"></div>
+                                        <div data-v-b50f6b8e="" class="body-description-div">
+                                            <div data-v-b50f6b8e="" class="gold-description">
+                                                Anti Reflective Glass
+                                            </div>
+                                            <div data-v-b50f6b8e="" class="black-description">
+                                                Our anti reflective glass reveals the true colours of the image, no green tint or optical distortions. Thanks to its anti-reflective coating, which reduces unwanted reflections to less than
+                                                1%, it has a smooth surface that allows for details to emerge unaltered. its coating is scratch resistant and very easy to clean.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 align-self-center d-none d-lg-block no-pointer-events"><img src="https://framexperts.com/assets/img/home_img1.png" alt="" class="w-100"></div>
+                    </div>
+                    <div data-v-d9008988="" data-v-b50f6b8e="" class="modal-mask" style="display: none;">
+                        <div data-v-d9008988="" class="modal-wrapper ">
+                            <div data-v-d9008988="" class="modal-container container">
+                                <div data-v-d9008988="" class="body_area">
+                                    <div data-v-d9008988="" class="btn-close"></div>
+                                    <div data-v-b50f6b8e="" data-v-d9008988="" style="height: 100%;"><img data-v-b50f6b8e="" data-v-d9008988="" src="" alt="..." class="cert-image-real" style="height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="home_fourth py-5 bg-second">
-            <div class="container-fluid my-5">
+            <div class="container-fluid mw-1450" style="width: 80%;">
                 <div class="row">
-                    <div class="col-md-5"><img src="https://framexperts.com/assets/img/home_img2.png" alt="" class="ml-0 ml-md-5 mw-100"></div>
-                    <div class="col-md-7 md-text-center"><h1 class="text_h1 mt-5 text-uppercase text-white fw-900">FRAME <br>BUILDER</h1>
-                        <h2 class="text_h2 text-white fw-300">Upload Your Photos</h2> <a href="https://framexperts.com/build-your-frame" class="d-inline-block btn-theme fs-24 md-fs-16 fw-300 text-uppercase mt-3">ACCESS OUR FRAME BUILDER</a>
+                    <div class="col-md-5 thumb_video">
+                        <div class="video-thumbnail"><img src="https://framexperts.com/assets/img/builder/video-thumb.png" alt="..." style="width: 100%;"></div>
+                        <div class="video-start-icon"><img src="https://framexperts.com/assets/img/builder/play.png" alt="..." style="width: 60%;"></div>
+                    </div>
+                    <div class="col-md-7 text-left d-flex align-items-center">
+                        <div><p class="text_h2 text-white fw-900">How it works ...</p>
+                            <p class="text_h6 font-weight-light text-white ">View our instructional video to find out more</p></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="home_service_section justify-content-between overflow-hidden position-relative flex-md-row flex-column">
-            <div class="home_service_item-1"><h2>CANVAS<br>STRETCHING</h2> <a href="https://framexperts.com/services/canvas">Learn More</a>
-                <div class="over-layer"></div>
-            </div>
-            <div class="home_service_item-2"><h2>FRAMING<br>SERVICES</h2> <a href="https://framexperts.com/services/framing">Learn More</a>
-                <div class="over-layer"></div>
-            </div>
-            <div class="home_service_item-3"><h2>SPORTS &amp;<br>MEMORABILIA</h2> <a href="https://framexperts.com/services/sports-memorabilia">Learn More</a>
-                <div class="over-layer"></div>
-            </div>
-        </div>
-        <div class="home_sixth position-relative py-5 bg-white">
-            <div class="container mw-1350 my-5">
-                <div class="text-center"><h1 class="text_h2 mt-5 text-uppercase text-theme fw-900">TESTIMONIALS</h1>
-                    <h2 class="text_h3 text-theme fw-300">What People Say</h2></div>
-                <div class="mt-0 mt-md-5 py-5 md-px-50px position-relative">
-                    <div class="container-fluid">
-                        <div id="testimonial-carousel" data-ride="carousel" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-5 d-none d-md-block"><img src="https://framexperts.com/storage/media/29/79cb4003-11f3-4362-a098-b0a9a3440c97.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
-                                        <div class="col-md-7 mt-0 mt-md-5 md-text-center"><h3 class="text_h4 text-second fw-300">Allan Egan</h3>
-                                            <p class="text_h6 text-theme fw-400 font-italic mw-700">
-                                                Great service from Angel and the team at Framexperts. We had two small football jerseys framed for our children and we are delighted with them. I will definitely recommend Framexperts to
-                                                family and friends.
-                                            </p></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md-5 d-none d-md-block"><img src="https://framexperts.com/storage/media/28/0e09c723-3b71-4e5e-90de-42f57945ffa4.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
-                                        <div class="col-md-7 mt-0 mt-md-5 md-text-center"><h3 class="text_h4 text-second fw-300">Mark Kavanagh</h3>
-                                            <p class="text_h6 text-theme fw-400 font-italic mw-700">
-                                                I came to Angel and the team at Frame Experts to put together a memorabilia frame of the 2018 Women's Hockey World Cup for me. The end result was truly remarkable. Angel used his expert
-                                                knowledge and experience into creating a truly stunning frame. To say I'm delighted with it is beyond an understatement. I cannot thank him enough for the hard work he put into creating this
-                                                for me.
-                                            </p></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#testimonial-carousel" role="button" data-slide="prev" class="carousel-control-prev d-none testimonial-carousel-control-prev"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span
-                                    class="sr-only">Previous</span></a> <a href="#testimonial-carousel" role="button" data-slide="next" class="carousel-control-next d-none testimonial-carousel-control-next"><span aria-hidden="true"
-                                                                                                                                                                                                                     class="carousel-control-next-icon"></span>
-                            <span class="sr-only">Next</span></a></div>
-                    </div>
-                    <div class="d-flex d-md-none testimonial_md_next_btn_area"><span class="bg-second d-flex align-items-center text-center h-cursor testimonial_md_btn  carousel-control-prev-custom"><img
-                            src="https://framexperts.com/assets/img/icons/previous.png" alt="" class="m-auto width-16 md-width-8"></span> <span
-                            class="bg-second d-flex align-items-center text-center h-cursor testimonial_md_btn  carousel-control-next-custom"><img src="https://framexperts.com/assets/img/icons/next.png" alt=""
-                                                                                                                                                   class="m-auto width-16 md-width-8"></span></div>
-                    <div class="justify-content-end align-items-center d-none d-md-flex"><span class="text-second text_p2 mr-4">Next Testimonial</span> <span
-                            class="testimonial_next_btn bg-second d-flex align-items-center text-center h-cursor carousel-control-next-custom"><img src="https://framexperts.com/assets/img/icons/next.png" alt=""
-                                                                                                                                                    class="m-auto width-16"></span></div>
-                </div>
-            </div>
-        </div>
-        <div class="home_seventh height-1 px-0 px-md-5 py-3 d-none d-md-block">
-            <div class="container mw-1450">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="explore_area p-5 bg-second text-white mt-40p w-min-content"><h1 class="text_h1 text-uppercase fw-900">EXPLORE</h1>
-                                <h2 class="text_h2 fw-300 white-space-nowrap"> Our Workshop</h2>
-                                <p class=" fw-300 text_p pl-2">
-                                    Every piece of art requires individual consideration and with our expertise we are here to ensure your art remains safe.
-                                </p> <a href="https://framexperts.com/explore-workspace" class="d-inline-block btn-theme fs-24 md-fs-16 fw-300 text-uppercase width-370 md-mw-100 text-center">EXPLORE NOW</a></div>
+        <div class="video-payer-modal">
+            <div class="player-container">
+                <div class="player"><img src="https://framexperts.com/assets/img/icons/video_modal_close_icon.svg" class="video_modal_close_icon" style="height: 30px; width: 30px;">
+                    <video id="video" src="https://framexperts.com/assets/video/sample.mp4" playsinline="" class="high_video_itself"></video>
+                    <div class="play-btn-big"></div>
+                    <div class="controls">
+                        <div class="controls-left">
+                            <div class="volume"><img src="https://htmlacademy.ru/assets/icons/reload-6x-white.png" class="icon reload_icon"></div>
+                            <div class="play-btn paused"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="home_ninth">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 bg-second py-5 pl-md-5">
-                        <div class="d-inline-block ml-0 ml-xl-5 ml-md-2 my-0 my-md-2 my-xl-5"><h3 class="text_h3 text-uppercase text-white  text-md-left fw-300 md-text-center">OPENING HOURS</h3>
-                            <div class="row text_h5 text-white fw-300 mt-4 mt-md-5">
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Mondays:</div>
-                                <div class="col-5 col-md-7">Closed</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Tuesdays:</div>
-                                <div class="col-5 col-md-7">10am - 6pm</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Wednesdays:</div>
-                                <div class="col-5 col-md-7">10am - 6pm</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Thursdays:</div>
-                                <div class="col-5 col-md-7">10am - 6pm</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Fridays:</div>
-                                <div class="col-5 col-md-7">10am - 6pm</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Saturdays:</div>
-                                <div class="col-5 col-md-7">12pm - 3pm</div>
-                                <div class="col-5 col-md-5 offset-2 offset-md-0">Sundays:</div>
-                                <div class="col-5 col-md-7">Closed</div>
+                        <div class="progress">
+                            <div class="progress-filled" style="width: 0%;"></div>
+                        </div>
+                        <div class="controls-right">
+                            <div class="time"><span class="time-current">0:00 / 2:03</span><span class="time-total"></span></div>
+                            <div class="fullscreen">
+                                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0V-1.5H-1.5V0H0ZM0 18H-1.5V19.5H0V18ZM26 18V19.5H27.5V18H26ZM26 0H27.5V-1.5H26V0ZM1.5 6.54545V0H-1.5V6.54545H1.5ZM0 1.5H10.1111V-1.5H0V1.5ZM-1.5 11.4545V18H1.5V11.4545H-1.5ZM0 19.5H10.1111V16.5H0V19.5ZM24.5 11.4545V18H27.5V11.4545H24.5ZM26 16.5H15.8889V19.5H26V16.5ZM27.5 6.54545V0H24.5V6.54545H27.5ZM26 -1.5H15.8889V1.5H26V-1.5Z"
+                                          transform="translate(2 2)" fill="white"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 bg-theme py-5 px-5 d-none d-md-block w-100">
-                        <div class="d-inline-block ml-0 ml-xl-5 ml-md-2 my-0 my-md-2 my-xl-5 w-100"><h3 class="text_h3  text-white text-left">
-                            Join our creative community for the latest on our exhibitions and member-only offers
-                        </h3>
-                            <form action="/subscribe" method="post" id="subscribeForm" class="w-100 mw-570">
-                                <div class="form-group mb-4"><input type="text" name="name" placeholder="Enter Your name..." class="theme1"></div>
-                                <div class="form-group mb-4"><input type="text" name="email" placeholder="Enter Your Email Address..." class="theme1"></div>
-                                <div class="form-group w-100">
-                                    <button class="btn btn-theme2 fs-26 w-100 mw-370">Become a member</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-block d-md-none py-5 px-5">
-            <div class="d-inline-block"><h3 class="text_p0 text-uppercase text-center fw-400 mb-4">Contact</h3>
-                <div class="row mb-4">
-                    <div class="col-2 text-center"><img src="https://framexperts.com/assets/img/icons/phone_2x.png" alt="" class="width-20"></div>
-                    <div class="col-10"><h5 class="text_h4 fw-300">
-                        +353 (0)1 497 1129
-                    </h5></div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-2 text-center"><img src="https://framexperts.com/assets/img/icons/message_2x.png" alt="" class="height-19"></div>
-                    <div class="col-10"><h5 class="text_h4 fw-300">
-                        hello@framexperts.com
-                    </h5></div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-2 text-center"><img src="https://framexperts.com/assets/img/icons/map_2x.png" alt="" class="width-20"></div>
-                    <div class="col-10"><h5 class="text_h4 fw-300">
-                        18A Ranelagh, Dublin, D06 T0C8
-                    </h5></div>
                 </div>
             </div>
         </div>
@@ -3505,46 +3896,170 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCloxJK3aIK9c7wNMn1wVnGCDHXh8Xei1c&amp;libraries=places&amp;callback=initAutocomplete"></script>
 
 
-<script src="https://framexperts.com/assets/vendors/lightgallery/lightgallery.js"></script>
+<script src="https://framexperts.com/assets/vendors/mouse-drag/lc-mouse-drag.min.js"></script>
 <script>
-    $('#gallery-carousel').carousel()
-    $('#testimonial-carousel').carousel()
+    //ELEMENT SELECTORS
+    var player = document.querySelector('.player');
+    var video = document.querySelector('#video');
+    var playBtn = document.querySelector('.play-btn');
+    var progressFill = document.querySelector('.progress-filled');
+    var progressSlider = document.querySelector('.progress');
+    var textCurrent = document.querySelector('.time-current');
+    var textTotal = document.querySelector('.time-total');
+    var speedBtns = document.querySelectorAll('.speed-item');
+    var fullscreenBtn = document.querySelector('.fullscreen');
+    var reloadBtn = document.querySelector('.reload_icon');
 
-    $('#gallery-carousel').on('slide.bs.carousel', function (e) {
-        $('.txt-current-slider').text(e.to + 1);
+    //GLOBAL VARS
+    let lastVolume = 1;
+    let isMouseDown = false;
+
+    //PLAYER FUNCTIONS
+    function togglePlay() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+        playBtn.classList.toggle('paused');
+    }
+
+    function togglePlayBtn() {
+        playBtn.classList.toggle('playing');
+    }
+
+    function setReload() {
+        video.currentTime = 0 * video.duration;
+        video.play();
+        playBtn.classList.toggle('paused');
+    }
+
+    function toggleMute() {
+        if (video.volume) {
+            lastVolume = video.volume;
+            video.volume = 0;
+            volumeBtn.classList.add('muted');
+            volumeFill.style.width = 0;
+        } else {
+            video.volume = lastVolume;
+            volumeBtn.classList.remove('muted');
+            volumeFill.style.width = `${lastVolume * 100}%`;
+        }
+    }
+
+    function neatTime(time) {
+        // var hours = Math.floor((time % 86400)/3600)
+        var minutes = Math.floor((time % 3600) / 60);
+        var seconds = Math.floor(time % 60);
+        seconds = seconds > 9 ? seconds : `0${seconds}`;
+        return `${minutes}:${seconds}`;
+    }
+
+    function updateProgress(e) {
+        progressFill.style.width = `${video.currentTime / video.duration * 100}%`;
+        textCurrent.innerHTML = `${neatTime(video.currentTime)} / ${neatTime(video.duration)}`;
+        // textTotal.innerHTML = neatTime(video.duration);
+        // console.log(progressFill.style.width);
+    }
+
+    $(document).on('click', '.progress', function (e) {
+        setProgress(e)
     })
 
-    $('.carousel-control-next-custom').click(function () {
-        $('.testimonial-carousel-control-next').click();
-    })
-    $('.carousel-control-prev-custom').click(function () {
-        $('.testimonial-carousel-control-prev').click();
-    })
+    function setProgress(e) {
+        $(playBtn).removeClass('paused')
+        const width = $(e.currentTarget).width();
+        const newTime = e.offsetX / width;
+        progressFill.style.width = `${newTime * 100}%`;
+        video.currentTime = newTime * video.duration;
+    }
 
-    $(function () {
-        $('.carousel-control-next-custom').click(function () {
-            $('.testimonial-carousel-control-next').click();
-        })
-        $('.carousel-control-prev-custom').click(function () {
-            $('.testimonial-carousel-control-prev').click();
-        })
-    })
+    function launchIntoFullscreen(element) {
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    }
 
-    $('.next-page').click(function () {
-        $('.carousel-control-next').click();
-    })
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    }
 
-    $('.prev-page').click(function () {
-        $('.carousel-control-prev').click();
-    })
+    var fullscreen = false;
 
-    $('.carousel-inner').lightGallery({
-        selector: ".image-item",
-        thumbnail: true,
-        animateThumb: true,
-        showThumbByDefault: true,
-    });
+    function toggleFullscreen() {
+        fullscreen ? exitFullscreen() : launchIntoFullscreen(player)
+        fullscreen = !fullscreen;
+    }
+
+    function setSpeed(e) {
+        console.log(parseFloat(this.dataset.speed));
+        video.playbackRate = this.dataset.speed;
+        speedBtns.forEach(speedBtn => speedBtn.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    function handleKeypress(e) {
+        switch (e.key) {
+            case " ":
+                togglePlay();
+            case "ArrowRight":
+                video.currentTime += 5;
+            case "ArrowLeft":
+                video.currentTime -= 5;
+            default:
+                return;
+        }
+    }
+
+    //EVENT LISTENERS
+    playBtn.addEventListener('click', togglePlay);
+    video.addEventListener('click', togglePlay);
+    video.addEventListener('play', togglePlayBtn);
+    video.addEventListener('pause', togglePlayBtn);
+    video.addEventListener('ended', togglePlayBtn);
+    video.addEventListener('timeupdate', updateProgress);
+    video.addEventListener('canplay', updateProgress);
+    window.addEventListener('mousedown', () => isMouseDown = true)
+    window.addEventListener('mouseup', () => isMouseDown = false)
+    progressSlider.addEventListener('click', setProgress);
+    fullscreenBtn.addEventListener('click', toggleFullscreen);
+    window.addEventListener('keydown', handleKeypress);
+    reloadBtn.addEventListener('click', setReload);
 </script>
+
+<script>
+    $(document).on("click", ".video_modal_close_icon", function (e) {
+        video.pause();
+        $('#videos_to_remove').val('');
+        $(".video-payer-modal").css("display", "none");
+    });
+    $(document).on("click", ".thumb_video", function (e) {
+        $(this).find("source").attr("src");
+        $(".player video")[0].load();
+        $(".video-payer-modal").css("display", "flex");
+        video.play();
+        playBtn.classList.toggle('paused');
+    });
+    $(document).ready(function () {
+        video.pause();
+    })
+    lc_mouseDrag('.uploaded_dynamic_image', 0);
+    lc_mouseDrag('#frame_image1', 0);
+    lc_mouseDrag('#frame_image0', 0);
+</script>
+
 
 <script>
     $(function () {
@@ -3563,6 +4078,7 @@
     gtag('js', new Date());
     gtag('config', 'G-6ZGXKCD2W6');
 </script>
-<div id="root"></div>
+
+
 </body>
 </html>
