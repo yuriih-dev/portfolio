@@ -8,12 +8,15 @@
 | HTML          |Nodejs                 |AlpineJS                           |              |              |npm
 | Java          |Java Spring            |ReactJS                            |              |              |Pod
 | Swift         |Expressjs              |AngularJS                          |              |              |Gradle
-| Objective-C   |                       |ThreeJS                            |              |              |Maven
+| Objective-C   |Apollo                 |ThreeJS                            |              |              |Maven
 | CSS/SCSS      |                       |Bootstrap                          |              |              |Machine Learning
-| C/C++         |                       |                                   |              |              |Deep Learning
+| C/C++         |                       |TailwindCSS                        |              |              |Deep Learning
 | C#            |                       |                                   |              |              |Prisma
 | Blade         |
 | Python        |
+| Python        |
+| Typescript    |
+| GraphQL       |
 
 
 
