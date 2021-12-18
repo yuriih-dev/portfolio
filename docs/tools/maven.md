@@ -5,10 +5,10 @@ mvn test
 mvn package
 mvn help:describe -Dcmd=compile
 
-mvn archetype:generate 
+mvn archetype:generate
 	-DgroupId={project-packaging}
 	-DartifactId={project-name}
-	-DarchetypeArtifactId={maven-template} 
+	-DarchetypeArtifactId={maven-template}
 	-DinteractiveMode=false
 
 

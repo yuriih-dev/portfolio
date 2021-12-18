@@ -1,4 +1,5 @@
 #### Create new Project
+
 `composer create-project --prefer-dist laravel/laravel [PROJECT_NAME]`
 
 ## Basic Commands

@@ -1,27 +1,26 @@
 #### My Skills
 
----
-|Languages      |Server Side Frameworks |Client Side Frameworks & Libraries |Mobile Native |Mobile Hybrid |Other Skills   |
-|---------------|-----------------------|-----------------------------------|--------------|--------------|---------------|
-| PHP           |Laravel                |jQuery                             |Android(java) |React Native  |Webpack
-| Javascript    |CodeIgniter            |VueJS                              |Swift         |Flutter       |Babel
-| HTML          |Nodejs                 |AlpineJS                           |              |              |npm
-| Java          |Java Spring            |ReactJS                            |              |              |Pod
-| Swift         |Expressjs              |AngularJS                          |              |              |Gradle
-| Objective-C   |Apollo                 |ThreeJS                            |              |              |Maven
-| CSS/SCSS      |                       |Bootstrap                          |              |              |Machine Learning
-| C/C++         |                       |TailwindCSS                        |              |              |Deep Learning
-| C#            |                       |                                   |              |              |Prisma
-| Blade         |
-| Python        |
-| Python        |
-| Typescript    |
-| GraphQL       |
-
-
+| Languages   | Server Side Frameworks | Client Side Frameworks & Libraries | Mobile Native | Server | Mobile Hybrid | Other Skills     |
+| ----------- | ---------------------- | ---------------------------------- | ------------- | ------ | ------------- | ---------------- |
+| PHP         | Laravel                | jQuery                             | Android(java) | Apache | React Native  | Webpack          |
+| Javascript  | CodeIgniter            | VueJS                              | Swift         | NginX  | Flutter       | Babel            |
+| HTML        | Nodejs                 | AlpineJS                           |               | Caddy  |               | npm              |
+| Java        | Java Spring            | ReactJS                            |               |        |               | Pod              |
+| Swift       | Expressjs              | AngularJS                          |               |        |               | Gradle           |
+| Objective-C | Apollo                 | ThreeJS                            |               |        |               | Maven            |
+| CSS/SCSS    |                        | Bootstrap                          |               |        |               | Machine Learning |
+| C/C++       |                        | TailwindCSS                        |               |        |               | Deep Learning    |
+| C#          |                        |                                    |               |        |               | Prisma           |
+| Blade       |
+| Python      |
+| Python      |
+| Typescript  |
+| GraphQL     |
 
 ## React - Apollo Typescript APP
+
 ---
+
 Created with CodeSandbox
 
 ### Environment
@@ -50,12 +49,12 @@ Created with CodeSandbox
 ```
 |-- public
 |-- server
-|-- src 
+|-- src
 |   |- components
 |   |   |- Audio
 |   |   |   |- AudioPlayer
 |   |   |   |- AudioContext
-|   |   |   |- index.ts
+|   |   |   |- index.js
 |   |   |   |- Process
 |   |   |   |- RecordButton
 |   |   |   |- Recorder
@@ -72,23 +71,23 @@ Created with CodeSandbox
 |   |   |- ProductItem
 |   |   |- ProductItem
 |   |   |- SVGIcon
-|   |   
+|   |
 |   |- layouts
 |   |   |- Default Layouts
-|   |  
+|   |
 |   |- pages
 |   |   |- 404
 |   |   |- home
 |   |   |- recipes
 |   |   |- websocket
-|   |  
+|   |
 |   |- store
 |       |- actions
 |       |- reducers
 |       |   |- appReducer.ts
-|       |   |- index.ts
-|       |   
-|       |- index.ts
+|       |   |- index.js
+|       |
+|       |- index.js
 |
 |- tsconfig.json
 |- package.jsong
@@ -113,8 +112,7 @@ yarn create react-app [] --template typescript
 yarn add @emotion/react
 ```
 
-_Note:_ Please import jsx from '@emotion/react' instead of React from 'react' at the top of every file where you are
-going to use css prop.
+_Note:_ Please import jsx from '@emotion/react' instead of React from 'react' at the top of every file where you are going to use css prop.
 [Lean more...](https://emotion.sh/docs/css-prop#jsx-pragma)
 
 - Use HTTP client
@@ -136,22 +134,22 @@ yarn add -D @types/react-router-dom
 - register routes
 
 ```typescript jsx
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import HomePage from "./home"
-import RecipesPage from './pages/recipes'
-import ErrorPage from './404'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './home';
+import RecipesPage from './pages/recipes';
+import ErrorPage from './404';
 // ...
 export default function App() {
   // ...
   return (
-          <Router>
-            <Routes>
-              <Route path={'/'} element={<HomePage/>}/>
-              ...
-              <Route path={'*'} element={<ErrorPage/>}/>
-            </Routes>
-          </Router>
-  )
+    <Router>
+      <Routes>
+        <Route path={'/'} element={<HomePage />} />
+        ...
+        <Route path={'*'} element={<ErrorPage />} />
+      </Routes>
+    </Router>
+  );
 }
 ```
 
@@ -183,57 +181,57 @@ yarn add @types/redux-persist
 2. config store with thunk middleware and redux persist
 
 ```typescript jsx
-import {createStore} from 'redux';
-import storage from 'redux-persist/lib/storage'
-import {persistStore, persistReducer} from 'redux-persist'
-import {rootReducer} from './reducers'
+import { createStore } from 'redux';
+import storage from 'redux-persist/lib/storage';
+import { persistStore, persistReducer } from 'redux-persist';
+import { rootReducer } from './reducers';
 
 const persistConfig = {
-    key: 'root',
-    storage
-}
+  key: 'root',
+  storage
+};
 
-export const store = createStore(
-    persistReducer(persistConfig, rootReducer)
-)
+export const store = createStore(persistReducer(persistConfig, rootReducer));
 
-export const persisStore = persistStore(store); 
+export const persisStore = persistStore(store);
 ```
 
 3. combine reducers with redux-persist
 
 ```typescript jsx
-import {combineReducers} from 'redux'
-import {appReducer} from './appReducer'
-import storage from 'redux-persist/lib/storage'
-import {persistReducer} from 'redux-persist'
-
+import { combineReducers } from 'redux';
+import { appReducer } from './appReducer';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
 
 export const rootReducer = combineReducers({
-    app: persistReducer({
-        key: 'appState',
-        storage
-    }, appReducer)
-})
+  app: persistReducer(
+    {
+      key: 'appState',
+      storage
+    },
+    appReducer
+  )
+});
 ```
 
 4. Redux/Redux-persist providers
 
 ```typescript jsx
 // ...
-import {Provider} from 'react-redux'
-import {PersistGate} from 'redux-persist/es/integration/react'
-import {store, persisStore} from './store'
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/es/integration/react';
+import { store, persisStore } from './store';
 // ...
 export default function App() {
-    // ...
-    return (
-        <Provider store={store}>
-            <PersistGate persistor={persisStore} loading={null}>
-                ...
-            </PersistGate>
-        </Provider>
-    )
+  // ...
+  return (
+    <Provider store={store}>
+      <PersistGate persistor={persisStore} loading={null}>
+        ...
+      </PersistGate>
+    </Provider>
+  );
 }
 ```
 
@@ -247,9 +245,9 @@ yarn add nodemon ts-node
 
 - Use SQLite & GraphQL Apollo Client
 
-``` 
-yarn add apollo-server apollo-server-core graphql 
-yarn add apollo-datasource apollo-datasource-rest 
+```
+yarn add apollo-server apollo-server-core graphql
+yarn add apollo-datasource apollo-datasource-rest
 yarn add sequelize
 ```
 
@@ -269,19 +267,26 @@ config "prisma" on package.json
   }
 }
 ```
+
 ### 5. Integration Spokestack API and Audio recording, Audio Visualization
 
 install [spokestack](https://www.npmjs.com/package/spokestack) and [wav encoder](https://www.npmjs.com/package/wav-encoder/v/0.3.0) using yarn
+
 ```yarn
 yarn add spokestack web-encoder
 yarn add @types/web-encoder -D
 ```
+
 ### 6. Integration Firebase using react-redux-firebase
+
 install firebase
+
 ```yarn
 yarn add firebase
 ```
+
 put firebase configurations into .env file.
+
 ```dotenv
 REACT_APP_FIREBASE_API_KEY=
 REACT_APP_FIREBASE_AUTH_DOMAIN=
@@ -294,15 +299,20 @@ REACT_APP_FIREBASE_MEASUREMENT_ID=
 ```
 
 ### 7. use Google apis
-- geocode api
-set google api key in env
+
+- geocode api set google api key in env
+
 ```dotenv
 REACT_APP_GOOGLE_API_KEY=
 ```
+
 install react geocode to use geocode api.
+
 ```yarn
 yarn add react-geocode
 yarn add @types/react-geocode
 ```
+
 ### 8. Deploy to GCP
+
 See app.yaml file

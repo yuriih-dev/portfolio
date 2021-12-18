@@ -10,22 +10,24 @@ git push -u origin master
 ```
 
 #### Commands
+
 - Clear cached file
-`git rm --cached tsconfig.tsbuildinfo`
+  `git rm --cached tsconfig.tsbuildinfo`
 - Squash commits
+
 ```dtd
 git checkout main
-git pull origin main 
+git pull origin main
 git checkout -b feature/styling
 git merge --squash styling
 ```
-- Amend
-`git commit --amend --author="lovecoding-git <bhupaudel0@gmail.com>"`
-- Add a new remote
-`git remote add origin [GIT_REPOSITORY_URL]`
-- Change the url of an existing remote repository
-`git remote set-url origin [GIT_REPOSITORY_URL]`
 
+- Amend
+  `git commit --amend --author="lovecoding-git <bhupaudel0@gmail.com>"`
+- Add a new remote
+  `git remote add origin [GIT_REPOSITORY_URL]`
+- Change the url of an existing remote repository
+  `git remote set-url origin [GIT_REPOSITORY_URL]`
 
 #### Most git commit prefixes
 
@@ -46,6 +48,7 @@ git merge --squash styling
 ```
 
 #### Configure global gitignore file
+
 - make .gitignore on home or Administrator for window
 - Then run following command on cmd
-`git config --global core.excludesfile ~/.gitignore`
+  `git config --global core.excludesfile ~/.gitignore`
