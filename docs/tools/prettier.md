@@ -75,11 +75,11 @@ After installing above, make changes to .eslintrc file.
 
 #### [Webstorm configuration](https://www.jetbrains.com/help/webstorm/prettier.html)
 
-1. short key for reformat `Ctrl + Alt + L`
-   2.Make sure you have Node.js installed on your computer.
-   3.Make sure a local Node.js interpreter is configured in the project
+1. short key for reformat `Ctrl + Alt + L`.
+2. Make sure you have Node.js installed on your computer.
+3. Make sure a local Node.js interpreter is configured in the project
    **Settings/Preferences | Languages and Frameworks | Node.js | Node Interpreter**
-   4.Make sure the Prettier plugin is enabled on the **Settings/Preferences | Plugins** page, tab Installed
+4. Make sure the Prettier plugin is enabled on the **Settings/Preferences | Plugins** page, tab Installed
 
 - In the embedded Terminal, type one of the following commands
 
@@ -89,21 +89,104 @@ npm install --save-dev --save-exact prettier
 npm install --global prettier
 ```
 
-5.**Settings/Preferences | Languages and frameworks | Javascript | Prettier** select the prettier
-To run Prettier automatically against specific files, open the Settings/Preferences dialog (Ctrl+Alt+S),
-go to Languages and Frameworks | JavaScript | Prettier, and use the On code reformatting and On save checkboxes to specify the actions that will trigger Prettier.
+5. **Settings/Preferences | Languages and frameworks | Javascript | Prettier** select the prettier To run Prettier automatically against specific files, open the Settings/Preferences dialog (Ctrl+Alt+S), go to Languages and Frameworks |
+   JavaScript | Prettier, and use the On code reformatting and On save checkboxes to specify the actions that will trigger Prettier.
 
-6.Using typescript
-Run the following commands in the embedded Terminal
+6. Using typescript Run the following commands in the embedded Terminal
 
 ```yarn
 yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-set parser in .eslintrc
+7. set parser in .eslintrc
 
 ```json
 {
   "parser": "@typescript-eslint/parser"
 }
+```
+
+#### Using ESLint with Vue.js and Laravel Mix
+
+1.Make sure installed Prettier Plug-in and set Node interpreter.
+
+- Install Prettier Plugin.
+
+**File|Settings(Ctrl + Alt + S)| Plugins**
+
+- Set Node interpreter and check box "Codding assistance for Node.js".
+
+**File|Settings(Ctrl + Alt + S)| Languages and Frameworks | Node & NPM**
+
+2. Install npm packages.
+
+```yarn
+yarn add -D eslint
+yarn add -D eslint-loader
+yarn add -D eslint-config-standard
+yarn add -D eslint-plugin-import
+yarn add -D eslint-plugin-node
+yarn add -D eslint-plugin-promise
+yarn add -D eslint-plugin-standard
+yarn add -D eslint-plugin-vue
+yarn add -D prettier
+yarn add -D eslint-plugin-prettier
+```
+
+3. config .eslintrc
+
+```json lines
+{
+  "extends": ["standard", "plugin:vue/recommended"],
+  "plugins": ["prettier"]
+}
+```
+
+4. config .prettierrc
+
+```json lines
+{
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 180,
+  "singleQuote": true,
+  "arrowParens": "always",
+  "trailingComma": "none",
+  "endOfLine": "auto"
+}
+```
+
+5. config webpack
+
+```js
+mix.webpackConfig({
+  // ...
+
+  module: {
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      }
+    ]
+  }
+
+  //...
+});
+```
+
+6. configure .eslintignore & .prettierignore
+
+- Eslint Ignore
+
+```json lines
+{}
+```
+
+- Prettier Ignore
+
+```json lines
+{}
 ```
