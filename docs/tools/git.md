@@ -12,10 +12,14 @@ git push -u origin master
 #### Commands
 
 - Clear cached file
-  `git rm --cached tsconfig.tsbuildinfo`
+
+```yarn
+git rm --cached [FOLDER OR FILE NAME TO REMOVE] -r
+```
+
 - Squash commits
 
-```dtd
+```yarn
 git checkout main
 git pull origin main
 git checkout -b feature/styling
@@ -23,11 +27,22 @@ git merge --squash styling
 ```
 
 - Amend
-  `git commit --amend --author="lovecoding-git <bhupaudel0@gmail.com>"`
+
+```yarn
+git commit --amend --author="lovecoding-git <bhupaudel0@gmail.com>"
+```
+
 - Add a new remote
-  `git remote add origin [GIT_REPOSITORY_URL]`
+
+```yarn
+git remote add origin [GIT_REPOSITORY_URL]
+```
+
 - Change the url of an existing remote repository
-  `git remote set-url origin [GIT_REPOSITORY_URL]`
+
+```yarn
+git remote set-url origin [GIT_REPOSITORY_URL]
+```
 
 #### Most git commit prefixes
 

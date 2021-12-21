@@ -23,4 +23,24 @@ server {
 
 #### Commands
 
-- restart `sudo systemctl restart nginx` or `service nginx restart`
+1. restart
+
+```dtd
+sudo systemctl restart nginx
+
+or
+
+service nginx restart
+```
+
+2. clear cache
+
+```dtd
+sudo service nginx stop
+sudo rm -rf /var/cache/nginx/*
+sudo service nginx start
+```
+
+#### Trouble Shootings
+
+1. [Duplication of default server](https://stackoverflow.com/questions/30973774/nginx-duplicate-default-server-error)
