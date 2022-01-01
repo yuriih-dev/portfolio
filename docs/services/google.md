@@ -10,3 +10,5 @@
 ### Gmail
 
 - [Gmail Access for SMTP](https://myaccount.google.com/lesssecureapps?pli=1)
+
+### [Setting up Python Development Environment](https://cloud.google.com/python/docs/setup#linux_1)
