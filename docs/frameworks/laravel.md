@@ -17,6 +17,7 @@ php artisan migrate:rollback
 php artisan cache:clear
 php artisan config:cache
 php artisan config:clear
+php artisan clear-compiled
 
 php artisan make:model Sample_data --migration
 php artisan make:controller SampleController --resource --model=Receipt
