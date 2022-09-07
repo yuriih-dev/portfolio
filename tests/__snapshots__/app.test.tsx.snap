@@ -1,0 +1,2472 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React App renders the html we want 1`] = `
+<div
+  className="h-100 flex-column"
+>
+  <div
+    className="css-1e0nv3y-TopBar"
+  >
+    <span
+      hidden={false}
+    >
+      Contact Me
+    </span>
+    <a
+      href="tel:+16612280244"
+    >
+      (661) 228-0244
+    </a>
+    <a
+      href="mailto:wyanou213@163.com"
+    >
+      bhupaudel0@gmail.com
+    </a>
+  </div>
+  <header
+    className="css-12kd6h9-Header"
+    data-background={false}
+  >
+    <div
+      className="container header"
+    >
+      <div
+        className="mobile-menu-toggle"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="icon css-yv743v-SVGIcon"
+          role="presentation"
+        >
+          <use
+            xlinkHref="#hamburger"
+          />
+        </svg>
+      </div>
+      <a
+        className="logoWrap"
+        href="/"
+        onClick={[Function]}
+      >
+        <div
+          className="logoWrap"
+        >
+          <strong
+            className="title"
+            hidden={false}
+          >
+            BP
+          </strong>
+        </div>
+      </a>
+      <div
+        className=" menuWrap"
+      >
+        <div
+          className="close-menu-wrap"
+          hidden={true}
+        >
+          <strong
+            className="close-menu"
+            onClick={[Function]}
+          >
+            Close
+          </strong>
+        </div>
+        <div
+          className="flex-center"
+          onClick={[Function]}
+        >
+          <span
+            className="menu-title"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+          >
+            Document
+          </span>
+        </div>
+        <div
+          className="css-xv3bjz-MenuItem"
+          data-open={false}
+          data-responsive-full={true}
+          onClick={[Function]}
+        >
+          <div
+            className="flex-center"
+            onClick={[Function]}
+          >
+            <span
+              className="menu-title"
+            >
+              Samples
+            </span>
+            <div
+              className="next-icon-wrap header"
+              data-open={false}
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-pwox06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#arrow-down"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul
+            className="css-t8ql77"
+            data-animation={true}
+            data-open={false}
+            data-responsive-full={true}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="menu-title-wrap"
+              hidden={true}
+              onClick={[Function]}
+            >
+              <div
+                className="icon-back-wrap"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="icon css-1iw4h9a-SVGIcon"
+                  role="presentation"
+                >
+                  <use
+                    xlinkHref="#arrow-back"
+                  />
+                </svg>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="icon css-17okj60-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#moving"
+                />
+              </svg>
+              <span
+                className="menu-title"
+              >
+                Samples
+              </span>
+            </div>
+            <div
+              className="py-1"
+            >
+              <a
+                href="/samples/simple-api"
+                onClick={[Function]}
+              >
+                <li
+                  className="css-cf48ck-MenuLink"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon css-1hddcft-SVGIcon"
+                    role="presentation"
+                  >
+                    <use
+                      xlinkHref="#arrow-next"
+                    />
+                  </svg>
+                  <span
+                    className="menu-item-title"
+                  >
+                    Simple API
+                  </span>
+                  <div
+                    className="next-icon-wrap"
+                    hidden={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="icon css-1hddcft-SVGIcon"
+                      role="presentation"
+                    >
+                      <use
+                        xlinkHref="#arrow-next"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a
+                href="/samples/resizable"
+                onClick={[Function]}
+              >
+                <li
+                  className="css-cf48ck-MenuLink"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon css-1hddcft-SVGIcon"
+                    role="presentation"
+                  >
+                    <use
+                      xlinkHref="#arrow-next"
+                    />
+                  </svg>
+                  <span
+                    className="menu-item-title"
+                  >
+                    Resizable
+                  </span>
+                  <div
+                    className="next-icon-wrap"
+                    hidden={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="icon css-1hddcft-SVGIcon"
+                      role="presentation"
+                    >
+                      <use
+                        xlinkHref="#arrow-next"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a
+                href="/samples/toaster"
+                onClick={[Function]}
+              >
+                <li
+                  className="css-cf48ck-MenuLink"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon css-1hddcft-SVGIcon"
+                    role="presentation"
+                  >
+                    <use
+                      xlinkHref="#arrow-next"
+                    />
+                  </svg>
+                  <span
+                    className="menu-item-title"
+                  >
+                    Toaster
+                  </span>
+                  <div
+                    className="next-icon-wrap"
+                    hidden={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="icon css-1hddcft-SVGIcon"
+                      role="presentation"
+                    >
+                      <use
+                        xlinkHref="#arrow-next"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a
+                href="/samples/carousel"
+                onClick={[Function]}
+              >
+                <li
+                  className="css-cf48ck-MenuLink"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon css-1hddcft-SVGIcon"
+                    role="presentation"
+                  >
+                    <use
+                      xlinkHref="#arrow-next"
+                    />
+                  </svg>
+                  <span
+                    className="menu-item-title"
+                  >
+                    Carousel
+                  </span>
+                  <div
+                    className="next-icon-wrap"
+                    hidden={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="icon css-1hddcft-SVGIcon"
+                      role="presentation"
+                    >
+                      <use
+                        xlinkHref="#arrow-next"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a
+                href="/samples/counter"
+                onClick={[Function]}
+              >
+                <li
+                  className="css-cf48ck-MenuLink"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="icon css-1hddcft-SVGIcon"
+                    role="presentation"
+                  >
+                    <use
+                      xlinkHref="#arrow-next"
+                    />
+                  </svg>
+                  <span
+                    className="menu-item-title"
+                  >
+                    Counter
+                  </span>
+                  <div
+                    className="next-icon-wrap"
+                    hidden={true}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="icon css-1hddcft-SVGIcon"
+                      role="presentation"
+                    >
+                      <use
+                        xlinkHref="#arrow-next"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <a
+          href="/auth/login"
+          onClick={[Function]}
+        >
+          <button
+            className="btn-create-new btn css-0"
+          >
+            <svg
+              aria-hidden="true"
+              className="icon css-1hddcft-SVGIcon"
+              role="presentation"
+            >
+              <use
+                xlinkHref="#add-circle-outline"
+              />
+            </svg>
+            <span
+              className="createButtonTitle"
+            >
+              Get Started
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    style={
+      Object {
+        "paddingTop": 18,
+      }
+    }
+  >
+    <div
+      className="css-w8ex15-HomePage"
+    >
+      <div
+        className="css-fm9ylu-Hero"
+        id="home"
+      >
+        <div
+          className="container"
+        >
+          <h4>
+            Bhusan Paudel
+          </h4>
+          <h2>
+            Full Stack Software Engineer
+          </h2>
+          <p
+            hidden={false}
+          >
+            I design, develop, deploy, and maintain custom web and client applications using the latest technologies and industry standards.
+            <br />
+            Working closely with our customers during the design and testing phases ensure a result everyone is proud of.
+          </p>
+        </div>
+      </div>
+      <div
+        className="container css-1opb932-Logos"
+      >
+        <div
+          className="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <button
+            className="slick-arrow slick-prev"
+            data-role="none"
+            onClick={[Function]}
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            className="slick-list"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={null}
+            onMouseMove={null}
+            onMouseUp={[Function]}
+            onTouchCancel={null}
+            onTouchEnd={[Function]}
+            onTouchMove={null}
+            onTouchStart={[Function]}
+            style={Object {}}
+          >
+            <div
+              className="slick-track"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              style={
+                Object {
+                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                  "WebkitTransition": "",
+                  "msTransform": "translateX(0px)",
+                  "opacity": 1,
+                  "transform": "translate3d(0px, 0px, 0px)",
+                  "transition": "",
+                }
+              }
+            >
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-5}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Amazon Web Service"
+                      src="/images/logos/amazon.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-4}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Google Cloud Service"
+                      src="/images/logos/gcp.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-3}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/mongo.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-2}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/android.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={-1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/swift.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active slick-current"
+                data-index={0}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Laravel"
+                      src="https://lovecoding714.site/assets_front/img/skills/laravel.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active"
+                data-index={1}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Vue"
+                      src="https://lovecoding714.site/assets_front/img/skills/vue.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active"
+                data-index={2}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="React"
+                      src="https://lovecoding714.site/assets_front/img/skills/react.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active"
+                data-index={3}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Node"
+                      src="https://lovecoding714.site/assets_front/img/skills/node.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={false}
+                className="slick-slide slick-active"
+                data-index={4}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Node"
+                      src="/images/logos/apollo.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={5}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Firebase"
+                      src="/images/logos/firebase.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={6}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Amazon Web Service"
+                      src="/images/logos/amazon.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={7}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Google Cloud Service"
+                      src="/images/logos/gcp.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={8}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/mongo.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={9}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/android.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide"
+                data-index={10}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "outline": "none",
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/swift.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={11}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Laravel"
+                      src="https://lovecoding714.site/assets_front/img/skills/laravel.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={12}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Vue"
+                      src="https://lovecoding714.site/assets_front/img/skills/vue.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={13}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="React"
+                      src="https://lovecoding714.site/assets_front/img/skills/react.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={14}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Node"
+                      src="https://lovecoding714.site/assets_front/img/skills/node.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={15}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Node"
+                      src="/images/logos/apollo.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={16}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Firebase"
+                      src="/images/logos/firebase.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={17}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Amazon Web Service"
+                      src="/images/logos/amazon.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={18}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="Google Cloud Service"
+                      src="/images/logos/gcp.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={19}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/mongo.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={20}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/android.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden={true}
+                className="slick-slide slick-cloned"
+                data-index={21}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 0,
+                  }
+                }
+                tabIndex="-1"
+              >
+                <div>
+                  <div
+                    className="carousel-item"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={-1}
+                  >
+                    <img
+                      alt="MongoDB"
+                      src="/images/logos/swift.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="slick-arrow slick-next"
+            data-role="none"
+            onClick={[Function]}
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+            type="button"
+          >
+             
+            Next
+          </button>
+        </div>
+      </div>
+      <div
+        className="container css-y6g687-Projects"
+        id="projects"
+      >
+        <h3>
+          A few of my projects
+        </h3>
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="https://spokestack.io/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Spokestack"
+                  src="/images/projects/spokestack.png"
+                />
+                <h5>
+                  Spokestack
+                </h5>
+                <div
+                  className="description"
+                >
+                  Spokestack is a powerful platform of open source libraries and robust services to make your software fully voice-enabled. Get started with open-source libraries that add speech recognition, text-to-speech, and language understanding to your software with one simple cross-platform API. We offer SDKs for different platforms that let you manage voice interactions inside your software.
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    NextJS
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Node
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Websocket
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    SASS
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="http://tcn.webbb.site/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Faevva Pay"
+                  src="/images/projects/tcn.png"
+                />
+                <h5>
+                  Faevva Pay
+                </h5>
+                <div
+                  className="description"
+                >
+                  Faevva Pay is an example website built with MERN stack. TreeJS for front design and simple login & register function and has dashboard.
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    React
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    ThreeJS
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Node
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    MongoDB
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="https://wasil-iq.com/ON/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Wasil-iq"
+                  src="/images/projects/wasil.png"
+                />
+                <h5>
+                  Wasil-iq
+                </h5>
+                <div
+                  className="description"
+                >
+                  Wasil is the first and the biggest fully automated shipping company in Iraq. They at Wasil aim to bring Iraq a step closer to the modern world by providing exceptional shipping services to our lovely costumers.
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    PHP
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Javascript
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Paypal
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Stripe
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="https://havvi.app"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Havvi"
+                  src="/images/projects/havvi.png"
+                />
+                <h5>
+                  Havvi
+                </h5>
+                <div
+                  className="description"
+                >
+                  Havvi brings you the best home fitness content from 100+ of the world’s top creators, totaling over 16,000 workouts and growing daily.
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    Expo
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firestore
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firebase function
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    FCM
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    NodeJS
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Strip
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="https://chillapp.ae/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Chill Car Service"
+                  src="/images/projects/chill.png"
+                />
+                <h5>
+                  Chill Car Service
+                </h5>
+                <div
+                  className="description"
+                >
+                  CHILL is an online car wash platform (Interior, exterior & Disinfectant) with extended features, The only online car wash market place that connects to car wash company and customer with instant booking at the BEST price
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    React Native
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firestore
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firebase function
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    FCM
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Tap
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    NodeJS
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            className="col-lg-4"
+          >
+            <a
+              href="https://cloudpin.it/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="project-item"
+              >
+                <img
+                  alt="Cloudpin"
+                  src="/images/projects/cloudpin.png"
+                />
+                <h5>
+                  Cloudpin
+                </h5>
+                <div
+                  className="description"
+                >
+                  Cloudpin lets users broadcast content to anyone in the world by simply sharing an easy to remember pin code.
+                </div>
+                <div
+                  className="flex-wrap"
+                >
+                  <span
+                    className="badge badge-green"
+                  >
+                    Expo
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firestore
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Firebase function
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    FCM
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    Tap
+                  </span>
+                  <span
+                    className="badge badge-green"
+                  >
+                    GatsbyJS
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container css-1yo770c-AboutMe"
+        id="about-me"
+      >
+        <h3>
+          About me
+        </h3>
+        <p>
+          I am specialized in Web and Mobile app development. I am highly specialized in Web and Mobile app development. I have solid knowledge in these areas and also a deep understanding of the technical side of things. I have the necessary drive, motivation and energy to see a project through to its completion. I pride myself on completing projects on time
+        </p>
+        <p>
+          Detail-oriented, adaptable and hard-working with 6+ years of experiences in developing mobile & web applications with contributing to lots of personal businesses and companies so far. I really enjoy working on cutting-edge projects and developing enabling new technologies in the hope that these will one day translate back to the real world and have a direct impact on our lives. I also enjoy being surrounded by brilliant people that share the vision of “technology for good” and I am truly humbled by their support. Meanwhile, I am excited by the ever-growing challenges I am faced with as my career unfolds, and keen to taking them on.
+        </p>
+      </div>
+      <div
+        className="container css-pfodlj-Skills"
+        id="skills"
+      >
+        <h3>
+          Primary Skills
+        </h3>
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                PHP
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                HTML, HTML5
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                CSS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Bootstrap, Jquery, TailwindCSS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Alpin.JS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Laravel
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                React.JS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Vue.JS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Android(java)/Swift
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Flutter
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                React Native
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Node.JS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Javascript
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Python
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                SASS/SCSS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                TALL, LAMP/LEMP Stack
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                MEAM, MERM Stack
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                API Development / Integration
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Laravel Forge, Envoyer, Spark, Vapor
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Stripe, Paypal Payment gateway Integration
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                AWS EC2, S3, Lambda, DynamoDB, Elasticache, CloudFront, RDS
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                MySQL, PostgreSQL, MongoDB
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Firebase Realtime/Firestore
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                Server Security, Performance Management, LoadBalancing System
+              </span>
+            </div>
+          </div>
+          <div
+            className="col-lg-3"
+          >
+            <div
+              className="skill-item"
+            >
+              <svg
+                aria-hidden="true"
+                className="icon css-qdgh06-SVGIcon"
+                role="presentation"
+              >
+                <use
+                  xlinkHref="#check-circle-outline"
+                />
+              </svg>
+              <span
+                className="skill-name"
+              >
+                GraphQL/Apollo
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container css-tbek2x-ContactForm"
+        id="contact-me"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-df-4"
+          >
+            <div
+              className="contact-detail"
+            >
+              <h4>
+                Contact Me
+              </h4>
+              <p>
+                If you have any questions for me or need to get my services, please email me using this form.
+                <br />
+                Always welcome to me.
+                <br />
+                <strong>
+                  Best Regards.
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-df-8"
+          >
+            <h4>
+              Send me a message
+            </h4>
+            <div
+              className="row"
+            >
+              <div
+                className="col-df-6"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    First Name
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <input
+                      className="input "
+                      onChange={[Function]}
+                      value=""
+                    />
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-df-6"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    Last Name
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <input
+                      className="input "
+                      onChange={[Function]}
+                      value=""
+                    />
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-df-6"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    Email
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <input
+                      className="input "
+                      onChange={[Function]}
+                      value=""
+                    />
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-df-6"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    Phone Number
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <input
+                      className="input "
+                      onChange={[Function]}
+                      value=""
+                    />
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-12"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    Subject
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <input
+                      className="input "
+                      onChange={[Function]}
+                      value=""
+                    />
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-12"
+              >
+                <div
+                  className="css-1cpuwcm-Input"
+                >
+                  <label>
+                    Message
+                  </label>
+                  <div
+                    className="input-wrapper undefined"
+                  >
+                    <textarea
+                      className="input "
+                      onChange={[Function]}
+                      rows={5}
+                      value=""
+                    >
+                      
+                    </textarea>
+                    
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-12"
+              >
+                <button
+                  className="btn btn-transparent css-0"
+                  disabled={true}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "marginLeft": "auto",
+                    }
+                  }
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="css-q388qd-Footer"
+  >
+    <div
+      className="footer-container "
+    >
+      <span
+        className="text-sm"
+      >
+        Copyright © 
+        2021
+         BP
+      </span>
+      <div
+        className="footer-link-wrapper"
+      >
+        <a
+          href="/#home"
+        >
+          <span
+            className="footer-link text-bold"
+          >
+            Home
+          </span>
+        </a>
+        <a
+          href="/#projects"
+        >
+          <span
+            className="footer-link text-bold"
+          >
+            Projects
+          </span>
+        </a>
+        <a
+          href="/#skills"
+        >
+          <span
+            className="footer-link text-bold"
+          >
+            Skills
+          </span>
+        </a>
+        <a
+          href="/#contact-me"
+        >
+          <span
+            className="footer-link text-bold"
+          >
+            Contact Me
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,16 @@
+
+# IDE setting
+.idea
+
+#build
+build
+build.zip
+
+# yarn setting
+.yarn
+!.yarn/releases
+!.yarn/plugins
+yarn.lock
+
+# node modules
+node_modules

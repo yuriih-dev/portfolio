@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "target": "es6",
+    "lib": ["dom", "es2017", "DOM.Iterable", "ScriptHost", "ES2016.Array.Include", "es6"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "sourceRoot": ".",
+    "baseUrl": ".",
+    "types": ["react", "react-dom", "jest"],
+    "module": "esnext"
+  },
+  "include": ["src", "tests", "jest.config.ts"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+    "exclude": ["src"],
+    "include": ["server"]
+  }
+}

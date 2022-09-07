@@ -1,0 +1,11 @@
+build/**
+.next
+dist
+__generated__
+coverage
+types,
+.yarn,
+.pnp.cjs,
+next-env.d.ts,
+public/spokestack-web-worker.js,
+public/*.json
