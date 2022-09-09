@@ -1,0 +1,12 @@
+body {
+  font: 400 14px / 1.45 Roboto, Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  background-color: rgb(20, 21, 20);
+  color: wheat;
+  background-image: linear-gradient(rgb(41, 42, 41), rgb(41, 42, 41)), linear-gradient(rgb(41, 42, 41), rgb(41, 42, 41)), linear-gradient(rgb(41, 42, 41), rgb(41, 42, 41)),
+    linear-gradient(rgb(41, 42, 41), rgb(41, 42, 41));
+  background-size: 1px, 1px, 1px, 1px;
+  background-position-x: 100px, 33%, 66%, calc(100% - 100px);
+  background-repeat: repeat-y;
+}
