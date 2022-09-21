@@ -2,7 +2,6 @@
 import { jsx } from '@emotion/react';
 import theme from '../../styles/theme';
 
-import { Link } from 'react-router-dom';
 import { css } from '@emotion/react';
 import { useScreen } from '../../utils/hooks';
 
@@ -17,13 +16,7 @@ export default function Header() {
   return (
     <header css={styles} data-background={top > 50}>
       <div className="container header">
-        <Link className="logoWrap" to="/">
-          <div className="logoWrap">
-            <strong className="title" hidden={isMobile}>
-              Alek Smith
-            </strong>
-          </div>
-        </Link>
+        <div className="logoWrap"></div>
         <div className=" menuWrap">
           <a href="/" download={true}>
             <Button transparent={isMobile} secondary={isMobile} className={'btn-create-new'}>
@@ -45,7 +38,7 @@ const styles = css`
   height: 60px;
 
   &[data-background='true'] {
-    background-color: #ffffff;
+    background-color: #303030;
     transition: background-color 0.5s ${theme.styles.transitionEasing};
     box-shadow: ${theme.styles.boxShadow};
     color: black;

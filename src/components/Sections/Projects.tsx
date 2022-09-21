@@ -1,59 +1,26 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
-import theme from '../../styles/theme';
-import projects from '../../data/projects';
-import { weightedShuffle } from "../../utils/helpers";
+import AspectView from '../elements/AspectView';
 
 export default function Projects() {
-
   return (
     <div css={styles} className="container" id="projects">
       <h3>A few of my projects</h3>
-      <div className="project-wrapper">
-        {weightedShuffle(projects).map((project, index) => (
-          <div key={index.toString()} className="project-item">
-            <img src={project.image} alt={project.name} />
-            <div className="title">
-              <h5>{project.name}</h5>
-            </div>
-            <div className="links">
-              {
-                project.website &&
-                <a href={project.website} target="_blank" rel="noopener noreferrer">
-                  Website
-                </a>
-              }
-              {
-                project.apple &&
-                <a href={project.apple} target="_blank" rel="noopener noreferrer">
-                  App Store
-                </a>
-              }
-              {
-                project.google &&
-                <a href={project.google} target="_blank" rel="noopener noreferrer">
-                  Play Store
-                </a>
-              }
-              {
-                project.detail &&
-                <a href={project.detail} target="_blank" rel="noopener noreferrer">
-                  Details
-                </a>
-              }
-            </div>
-            <div className="description">{project.description}</div>
-            <div className={'flex-wrap'} style={{marginTop: 'auto'}}>
-              {project.tags.map((tag: string, index: number) => {
-                return (
-                  <span className="badge badge-green" key={index.toString()}>
-                    {tag}
-                  </span>
-                );
-              })}
+      <div>
+        <h3>Havvi</h3>
+        <div className="project-wrapper">
+          <div className="project-item">
+            <AspectView ratio={2}>
+              <img src="/images/projects/havvi.png" alt="Havvi" />
+            </AspectView>
+            <div className="p-1">
+              <div className="description">project description</div>
+              <div className={'flex-wrap'} style={{ marginTop: 'auto' }}>
+                <span className="badge badge-green">React</span>
+              </div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
@@ -62,36 +29,37 @@ export default function Projects() {
 const styles = css`
   width: 96%;
   margin: 30px auto 0 auto;
-  
-  .project-wrapper{
+
+  .project-wrapper {
     display: grid;
     grid-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
-  
+
   .project-item {
     width: 100%;
-    background-color: white;
-    border-radius: ${theme.styles.border};
-    padding: 10px;
+    background-color: #555555;
     height: inherit;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    cursor: pointer;
 
     img {
       width: 100%;
       object-fit: contain;
+      border-radius: 4px;
     }
-    
+
     .title,
-    .links{
+    .links {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
-    
-    .links{
-      a{
+
+    .links {
+      a {
         font-size: 12px;
         border-radius: 4px;
         margin-right: 10px;

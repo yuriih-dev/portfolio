@@ -5,7 +5,6 @@ import Input from '../Input';
 import { InputOnChangeProps } from '../../types';
 import theme from '../../styles/theme';
 import Button from '../Button';
-import ToastManager from '../Toast/ToastManager';
 
 const initialState = {
   firstName: '',
@@ -28,7 +27,6 @@ export default function ContactForm() {
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
-      ToastManager.success('Successfully sent your message!');
     }, 1500);
   };
 

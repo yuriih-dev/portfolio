@@ -1,25 +1,19 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
-import { useScreen } from '../../utils/hooks';
 import SocialGroup from '../elements/SocialGroup';
 
 export default function Hero() {
-  const { isMobile } = useScreen();
   return (
     <div css={styles} id="home">
       <div className="container">
-        <h2>Full Stack Developer</h2>
-        <p hidden={isMobile}>
-          I design, develop, deploy, and maintain custom web and client applications using the latest technologies and industry standards.
-          <br />
-          Working closely with our customers during the design and testing phases ensure a result everyone is proud of.
-        </p>
+        <h2>Alek Smith</h2>
+        <h3>Full Stack Software Engineer</h3>
         <SocialGroup />
         <hr style={{ height: 1, backgroundColor: '#ffffff7f', border: 'none', margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           {[
-            { label: 'Backend Development', count: '+6 years' },
-            { label: 'Frontend Development', count: '+7 years' },
+            { label: 'Backend Development', count: '5 years' },
+            { label: 'Frontend Development', count: '7 years' },
             { label: 'Mobile Development', count: '+4 years' }
           ].map((item, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', marginRight: 20 }}>
@@ -50,12 +44,10 @@ export default function Hero() {
 const styles = css`
   width: 100%;
   margin: auto;
-
-  background-image: url(/images/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  min-height: 350px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;

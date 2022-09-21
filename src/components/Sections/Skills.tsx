@@ -33,7 +33,7 @@ const skills = [
 export default function Skills() {
   return (
     <div css={styles} className="container" id="skills">
-      <h3>Primary Skills</h3>
+      <h3>Technical Skills</h3>
       <div className="row">
         {skills.map((skill) => (
           <div className="col-lg-3" key={skill}>
