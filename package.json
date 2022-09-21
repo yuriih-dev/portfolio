@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "src/index.tsx",
   "license": "MIT",
-  "homepage": "https://alek-site.herokuapp.com/build",
+  "homepage": "/build",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

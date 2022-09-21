@@ -2,6 +2,8 @@
 import { css, jsx } from '@emotion/react';
 import AspectView from '../elements/AspectView';
 
+import havviImage from '../../assets/images/projects/havvi.png';
+
 export default function Projects() {
   return (
     <div css={styles} className="container" id="projects">
@@ -11,7 +13,7 @@ export default function Projects() {
         <div className="project-wrapper">
           <div className="project-item">
             <AspectView ratio={2}>
-              <img src="/images/projects/havvi.png" alt="Havvi" />
+              <img src={havviImage} alt="Havvi" />
             </AspectView>
             <div className="p-1">
               <div className="description">project description</div>
