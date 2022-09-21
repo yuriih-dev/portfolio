@@ -1,3 +1,3 @@
 <?php
 
-include ("./build/index.html")
+include ("./build/index.html");
