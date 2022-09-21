@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  php-cs-fixer:
+  build:
     runs-on: ubuntu-18.04
 
     steps:
