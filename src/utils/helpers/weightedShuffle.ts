@@ -1,7 +1,7 @@
-export const weightedShuffle = (items:any[], weights?: number[]) => {
+export const weightedShuffle = (items: any[], weights?: number[]) => {
   const n = items.length;
   const nodes = new Array(n).fill(null);
-  if (!weights){
+  if (!weights) {
     weights = new Array(n).fill(1);
   }
 

@@ -1,75 +1,31 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react';
-import { useState } from 'react';
 import theme from '../../styles/theme';
 
 import { Link } from 'react-router-dom';
 import { css } from '@emotion/react';
 import { useScreen } from '../../utils/hooks';
 
-import { MovingIcon, HamburgerIcon, ArrowNextIcon, DownloadIcon } from "../Icons";
-import Menu from '../Menu';
+import { DownloadIcon } from '../Icons';
 import { useScroll } from '../../utils/hooks';
-import Button from "../Button";
-
-const menuList = [
-  {
-    name: 'Document',
-    path: '/docs'
-  },
-  {
-    name: 'Samples',
-    icon: <MovingIcon />,
-    show: false,
-    list: [
-      { name: 'Simple API', path: '/samples/simple-api', icon: <ArrowNextIcon /> },
-      { name: 'Resizable', path: '/samples/resizable', icon: <ArrowNextIcon /> },
-      { name: 'Toaster', path: '/samples/toaster', icon: <ArrowNextIcon /> },
-      { name: 'Carousel', path: '/samples/carousel', icon: <ArrowNextIcon /> },
-      { name: 'Counter', path: '/samples/counter', icon: <ArrowNextIcon /> }
-    ]
-  }
-];
+import Button from '../Button';
 
 export default function Header() {
-  const { isMobile, isDesktop } = useScreen();
+  const { isMobile } = useScreen();
   const { top } = useScroll();
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-
-  // determines if which mobile menu is opened for responsive only
-  const [activeMenu, setActiveMenu] = useState<string | undefined>(undefined);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prevState) => !prevState);
-    setActiveMenu(undefined);
-  };
-
-  const handleMenuClick = (menuName: string | undefined) => {
-    setActiveMenu(menuName);
-  };
 
   return (
     <header css={styles} data-background={top > 50}>
       <div className="container header">
-        <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          <HamburgerIcon />
-        </div>
         <Link className="logoWrap" to="/">
           <div className="logoWrap">
             <strong className="title" hidden={isMobile}>
-              BP
+              Alek Smith
             </strong>
           </div>
         </Link>
-        <div className={(mobileMenuOpen ? 'open' : '') + ' menuWrap'}>
-          <div className={'close-menu-wrap'} hidden={isDesktop}>
-            <strong className={'close-menu'} onClick={toggleMobileMenu}>
-              Close
-            </strong>
-          </div>
-          <Menu menu={menuList} activeMenu={activeMenu} menuClick={handleMenuClick} />
-          <a href="./Bhusan%20Paudel.pdf" download={true}>
+        <div className=" menuWrap">
+          <a href="/" download={true}>
             <Button transparent={isMobile} secondary={isMobile} className={'btn-create-new'}>
               <DownloadIcon />
               <span className="createButtonTitle">Download CV</span>
@@ -86,7 +42,6 @@ const styles = css`
   transition: background-color 0.5s ${theme.styles.transitionEasing};
   color: white;
   fill: white;
-  top: 18px;
   height: 60px;
 
   &[data-background='true'] {

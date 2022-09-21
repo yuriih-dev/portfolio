@@ -1,3 +1,23 @@
+$backgroundColor: rgb(20, 21, 20);
+
+html {
+  height: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: $backgroundColor;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+
+  &[hidden] {
+    display: none !important;
+  }
+}
+
 body {
   font: 400 14px / 1.45 Roboto, Georgia, 'Times New Roman', Times, serif;
   letter-spacing: 0.03em;
