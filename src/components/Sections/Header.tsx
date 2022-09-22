@@ -5,7 +5,6 @@ import theme from '../../styles/theme';
 import { css } from '@emotion/react';
 import { useScreen } from '../../utils/hooks';
 
-import { DownloadIcon } from '../Icons';
 import { useScroll } from '../../utils/hooks';
 import Button from '../Button';
 
@@ -18,10 +17,9 @@ export default function Header() {
       <div className="container header">
         <div className="logoWrap"></div>
         <div className=" menuWrap">
-          <a href="/" download={true}>
+          <a href="/build/Alek%20Smith.pdf" target="_blank">
             <Button transparent={isMobile} secondary={isMobile} className={'btn-create-new'}>
-              <DownloadIcon />
-              <span className="createButtonTitle">Download CV</span>
+              <span className="createButtonTitle">View CV</span>
             </Button>
           </a>
         </div>
