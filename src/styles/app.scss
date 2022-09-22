@@ -740,9 +740,17 @@ input[readonly]:focus {
   @include spacing(margin);
 }
 
-//padding
+// padding
 .p- {
   @include spacing(padding);
+}
+
+.pl- {
+  @include spacing(padding-left);
+}
+
+.pr- {
+  @include spacing(padding-right);
 }
 
 .py- {

@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.c758fa7e.chunk.css",
-    "main.js": "/build/static/js/main.5b2626bb.chunk.js",
-    "main.js.map": "/build/static/js/main.5b2626bb.chunk.js.map",
+    "main.css": "/build/static/css/main.b78d3c0e.chunk.css",
+    "main.js": "/build/static/js/main.8677569e.chunk.js",
+    "main.js.map": "/build/static/js/main.8677569e.chunk.js.map",
     "runtime-main.js": "/build/static/js/runtime-main.697f004e.js",
     "runtime-main.js.map": "/build/static/js/runtime-main.697f004e.js.map",
     "static/css/2.0046937d.chunk.css": "/build/static/css/2.0046937d.chunk.css",
-    "static/js/2.45eb652a.chunk.js": "/build/static/js/2.45eb652a.chunk.js",
-    "static/js/2.45eb652a.chunk.js.map": "/build/static/js/2.45eb652a.chunk.js.map",
+    "static/js/2.6054e787.chunk.js": "/build/static/js/2.6054e787.chunk.js",
+    "static/js/2.6054e787.chunk.js.map": "/build/static/js/2.6054e787.chunk.js.map",
     "index.html": "/build/index.html",
-    "precache-manifest.343f74a0ab60d8b94da17fa8975c925a.js": "/build/precache-manifest.343f74a0ab60d8b94da17fa8975c925a.js",
+    "precache-manifest.7edabe37b36a61aa5dac0dbfee79d864.js": "/build/precache-manifest.7edabe37b36a61aa5dac0dbfee79d864.js",
     "service-worker.js": "/build/service-worker.js",
     "static/css/2.0046937d.chunk.css.map": "/build/static/css/2.0046937d.chunk.css.map",
-    "static/css/main.c758fa7e.chunk.css.map": "/build/static/css/main.c758fa7e.chunk.css.map",
-    "static/js/2.45eb652a.chunk.js.LICENSE.txt": "/build/static/js/2.45eb652a.chunk.js.LICENSE.txt",
+    "static/css/main.b78d3c0e.chunk.css.map": "/build/static/css/main.b78d3c0e.chunk.css.map",
+    "static/js/2.6054e787.chunk.js.LICENSE.txt": "/build/static/js/2.6054e787.chunk.js.LICENSE.txt",
+    "static/js/main.8677569e.chunk.js.LICENSE.txt": "/build/static/js/main.8677569e.chunk.js.LICENSE.txt",
+    "static/media/3.png": "/build/static/media/3.84da508a.png",
+    "static/media/4.png": "/build/static/media/4.2437b3fe.png",
+    "static/media/5.png": "/build/static/media/5.7c50e934.png",
+    "static/media/freeLogoMaker.png": "/build/static/media/freeLogoMaker.3140cae2.png",
     "static/media/havvi.png": "/build/static/media/havvi.b922f975.png",
     "static/media/slick-theme.css": "/build/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.697f004e.js",
     "static/css/2.0046937d.chunk.css",
-    "static/js/2.45eb652a.chunk.js",
-    "static/css/main.c758fa7e.chunk.css",
-    "static/js/main.5b2626bb.chunk.js"
+    "static/js/2.6054e787.chunk.js",
+    "static/css/main.b78d3c0e.chunk.css",
+    "static/js/main.8677569e.chunk.js"
   ]
 }
