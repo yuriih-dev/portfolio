@@ -5,6 +5,7 @@ import FreeLogoMaker from './FreeLogoMaker';
 import AntiBlackActivityDatabase from './AntiBlackActivityDatabase';
 import Framexperts from './Framexperts';
 import VectorGirl from './VectorGirl';
+import Hitpiece from './Hitpiece';
 
 export default function Projects() {
   return (
@@ -13,6 +14,7 @@ export default function Projects() {
       <div>
         <div className="project-wrapper">
           <FreeLogoMaker />
+          <Hitpiece />
           <Havvi />
           <AntiBlackActivityDatabase />
           <Framexperts />
