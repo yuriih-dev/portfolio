@@ -474,6 +474,7 @@ input[readonly]:focus {
 .flex-left-center,
 .flex-top-center,
 .flex-end,
+.flex-wrap,
 .flex-between-center {
   display: flex;
 }
@@ -488,6 +489,10 @@ input[readonly]:focus {
 
 .flex-column {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-center {

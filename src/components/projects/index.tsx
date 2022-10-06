@@ -6,6 +6,7 @@ import AntiBlackActivityDatabase from './AntiBlackActivityDatabase';
 import Framexperts from './Framexperts';
 import VectorGirl from './VectorGirl';
 import Hitpiece from './Hitpiece';
+import Apollofactor from './Apollofactor';
 
 export default function Projects() {
   return (
@@ -19,6 +20,7 @@ export default function Projects() {
           <AntiBlackActivityDatabase />
           <Framexperts />
           <VectorGirl />
+          <Apollofactor />
         </div>
       </div>
     </div>
