@@ -7,6 +7,7 @@ import Framexperts from './Framexperts';
 import VectorGirl from './VectorGirl';
 import Hitpiece from './Hitpiece';
 import Apollofactor from './Apollofactor';
+import Bidstitch from './Bidstitch';
 
 export default function Projects() {
   return (
@@ -21,6 +22,7 @@ export default function Projects() {
           <Framexperts />
           <VectorGirl />
           <Apollofactor />
+          <Bidstitch />
         </div>
       </div>
     </div>
