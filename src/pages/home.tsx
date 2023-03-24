@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 import DefaultLayout from '../layouts/DefaultLayout';
-// import ContactForm from '../components/Sections/ContactForm';
 import Hero from '../components/Sections/Hero';
 import Projects from '../components/projects';
 import Skills from '../components/Sections/Skills';
 import AboutMe from '../components/Sections/AboutMe';
+import ContactForm from 'src/components/Sections/ContactForm';
 
 export const HomePage = () => {
   return (
@@ -15,6 +15,7 @@ export const HomePage = () => {
         <Projects />
         <AboutMe />
         <Skills />
+        <ContactForm />
       </div>
     </DefaultLayout>
   );
