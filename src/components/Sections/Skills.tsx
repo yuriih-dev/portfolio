@@ -3,31 +3,33 @@ import { css, jsx } from '@emotion/react';
 import { CheckCircleOutline } from '../Icons';
 
 const skills = [
-  'PHP',
+  'PHP/Laravel',
   'HTML, HTML5',
-  'CSS',
+  'CSS/SCSS/LESS',
   'Bootstrap, Jquery, TailwindCSS',
   'Alpin.JS',
-  'Laravel',
-  'React.JS',
-  'Vue.JS',
+  'Laravel/Jetstream',
+  'React.JS/Next.JS',
+  'Vue.JS/Nuxt.JS',
   'Android(java)/Swift',
   'Flutter',
   'React Native',
-  'Node.JS',
-  'Javascript',
+  'Node.JS/Express.JS',
+  'Javascript/Typescript',
   'Python',
   'SASS/SCSS',
   'TALL, LAMP/LEMP Stack',
   'MEAM, MERM Stack',
-  'API Development / Integration',
+  'API Development/Integration',
   'Laravel Forge, Envoyer, Spark, Vapor',
+  'Serverless/Laravel Vapor',
   'Stripe, Paypal Payment gateway Integration',
   'AWS EC2, S3, Lambda, DynamoDB, Elasticache, CloudFront, RDS',
   'MySQL, PostgreSQL, MongoDB',
   'Firebase Realtime/Firestore',
   'Server Security, Performance Management, LoadBalancing System',
-  'GraphQL/Apollo'
+  'GraphQL/Apollo',
+  'TypeGraphQL/TypeORM'
 ];
 
 export default function Skills() {

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer css={styles.footer}>
       <div className="container">
         <div className="footer-container">
-          <span className="text-sm">Copyright © {new Date().getUTCFullYear()} Alek Smith</span>
+          <span className="text-sm">Copyright © {new Date().getUTCFullYear()} Yurii Herula</span>
           <div className="footer-link-wrapper">
             <a href="/#home">
               <span className="footer-link text-bold text-white">Home</span>

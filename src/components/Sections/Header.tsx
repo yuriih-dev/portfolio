@@ -17,7 +17,7 @@ export default function Header() {
       <div className="container header">
         <div className="logoWrap"></div>
         <div className=" menuWrap">
-          <a href="/build/Alek%20Smith.pdf" target="_blank">
+          <a href="" target="_blank">
             <Button transparent={isMobile} secondary={isMobile} className={'btn-create-new'}>
               <span className="createButtonTitle">View CV</span>
             </Button>
