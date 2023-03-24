@@ -17,7 +17,7 @@ export default function Header() {
       <div className="container header">
         <div className="logoWrap"></div>
         <div className=" menuWrap">
-          <a href="" target="_blank">
+          <a href="https://drive.google.com/file/d/1NhKTLxWX4eGJyPcs6GQzpNTeZ9psmgFf/view?usp=share_link" rel="noreferrer" target="_blank">
             <Button transparent={isMobile} secondary={isMobile} className={'btn-create-new'}>
               <span className="createButtonTitle">View CV</span>
             </Button>
