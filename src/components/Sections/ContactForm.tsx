@@ -42,7 +42,7 @@ export default function ContactForm() {
   return (
     <div css={styles} className="container" id="contact-me">
       <div className="row">
-        <div className="col-df-4">
+        <div className="col-md-4">
           <div className="contact-detail">
             <h4>Contact Me</h4>
             <p>
@@ -54,19 +54,19 @@ export default function ContactForm() {
             </p>
           </div>
         </div>
-        <div className="col-df-8">
+        <div className="col-md-8">
           <h4>Send me a message</h4>
           <div className="row">
-            <div className="col-df-6">
+            <div className="col-md-6">
               <Input name="firstName" value={state.firstName} onChange={handleChange} label="First Name" />
             </div>
-            <div className="col-df-6">
+            <div className="col-md-6">
               <Input name="lastName" value={state.lastName} onChange={handleChange} label="Last Name" />
             </div>
-            <div className="col-df-6">
+            <div className="col-md-6">
               <Input name="email" value={state.email} onChange={handleChange} label="Email" />
             </div>
-            <div className="col-df-6">
+            <div className="col-md-6">
               <Input name="phoneNumber" value={state.phoneNumber} onChange={handleChange} label="Phone Number" />
             </div>
             <div className="col-12">
@@ -90,7 +90,7 @@ export default function ContactForm() {
 const styles = css`
   width: 96%;
   margin: 50px auto;
-  background-color: white;
+  background-color: #222222;
   border-radius: ${theme.styles.borderRadius};
 
   .contact-detail {
