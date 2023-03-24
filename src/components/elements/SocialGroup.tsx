@@ -4,9 +4,9 @@ import LinkedInIcon from "../Icons/LinkedInIcon";
 import GithubIcon from "../Icons/GithubIcon";
 import TwitterIcon from "../Icons/TwitterIcon";
 
-const linkedin = "https://www.linkedin.com/in/bhusan-paudel-393037219/";
-const github = "https://github.com/bhupaudel0";
-const twitter = "https://twitter.com/PaudelBhusan";
+const linkedin = "https://www.linkedin.com/in/yurii-herula/";
+const github = "https://github.com/yuriih-dev";
+const twitter = "https://twitter.com/yuriiherula";
 
 export default function SocialGroup() {
   return (

@@ -10,11 +10,7 @@ const DefaultLayout = ({ children, header = true }: AuxProps) => {
   return (
     <div className="h-100 flex-column">
       {header && <Header />}
-      <div
-        style={{
-          paddingTop: 18
-        }}
-      >
+      <div>
         {children}
       </div>
       <Footer />

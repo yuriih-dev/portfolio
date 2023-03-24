@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div css={styles} id="home">
       <div className="container">
-        <h2>Alek Smith</h2>
+        <h2>Yurii Herula</h2>
         <h3>Full Stack Software Engineer</h3>
         <SocialGroup />
         <hr style={{ height: 1, backgroundColor: '#ffffff7f', border: 'none', margin: '10px 0' }} />
@@ -52,6 +52,7 @@ const styles = css`
   flex-direction: column;
   justify-content: center;
   color: white;
-  // clip-path: ellipse(85% 100% at 50% 0%);
+  background-color: #12345689;
+  clip-path: ellipse(85% 100% at 50% 0%);
   clip-path: url(#myCurve);
 `;
