@@ -5,6 +5,7 @@ import Input from '../Input';
 import { InputOnChangeProps } from '../../types';
 import theme from '../../styles/theme';
 import Button from '../Button';
+import SocialGroup from '../elements/SocialGroup';
 
 const initialState = {
   firstName: '',
@@ -44,7 +45,7 @@ export default function ContactForm() {
       <div className="row">
         <div className="col-md-4">
           <div className="contact-detail">
-            <h4>Contact Me</h4>
+            <h4 style={{fontSize: 24}}>Contact Me</h4>
             <p>
               If you have any questions for me or need to get my services, please email me using this form.
               <br />
@@ -52,10 +53,21 @@ export default function ContactForm() {
               <br />
               <strong>Best Regards.</strong>
             </p>
+            
+            <div className='mt-5'>
+              <div>
+                <strong>Email Address: </strong>
+                <a className='pl-2' href='mailto:yurii.herula@outlook.com'>yurii.herula@outlook.com</a>
+              </div>
+            </div>
+            
+            <div className='mt-auto'>
+              <SocialGroup />
+            </div>
           </div>
         </div>
         <div className="col-md-8">
-          <h4>Send me a message</h4>
+          <h4 style={{fontSize: 24}}>Send me a message</h4>
           <div className="row">
             <div className="col-md-6">
               <Input name="firstName" value={state.firstName} onChange={handleChange} label="First Name" />
@@ -96,6 +108,8 @@ const styles = css`
   .contact-detail {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
     ${theme.MOBILE_MEDIA_QUERY} {
       border-bottom: ${theme.styles.border};

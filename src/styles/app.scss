@@ -12,7 +12,7 @@ $warningColor: #facc5f;
 $errorColor: #f74800;
 
 $backgroundColor: rgb(20, 21, 20);
-$linkColor: blue;
+$linkColor: rgb(128, 128, 219);
 $buttonBackground: #803809;
 
 $linkSecondary: #f7f6f3;
@@ -92,6 +92,7 @@ header {
 a {
   color: $linkColor;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
