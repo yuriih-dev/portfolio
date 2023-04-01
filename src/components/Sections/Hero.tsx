@@ -6,7 +6,9 @@ export default function Hero() {
   return (
     <div css={styles} id="home">
       <div className="container">
-        <h2>Yurii Herula</h2>
+        <div>
+          <h2>Yurii Herula</h2>
+        </div>
         <h3>Full Stack Software Engineer</h3>
         <SocialGroup />
         <hr style={{ height: 1, backgroundColor: '#ffffff7f', border: 'none', margin: '10px 0' }} />
