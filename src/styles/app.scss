@@ -1,3 +1,4 @@
+
 // primary colors
 $primaryColor: #0103f3;
 $primaryDark: #03059f;
@@ -39,6 +40,7 @@ $mediumWidth: 768px;
 $largeWidth: 992px;
 $extraLargeWidth: 1200px;
 
+@import './index.css';
 html {
   height: 100%;
   min-width: 300px;
