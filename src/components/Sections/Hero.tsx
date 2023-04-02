@@ -6,17 +6,16 @@ export default function Hero() {
   return (
     <div css={styles} id="home">
       <div className="container">
-        <div>
-        <div className="flex -space-x-1 overflow-hidden">
-          <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-          <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="" />
-          <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-        </div>
-          <h2>Yurii Herula</h2>
-        </div>
-        <h3>Full Stack Software Engineer</h3>
+        <div className="flex items-center mb-2">
+          <div className="flex -space-x-1 overflow-hidden mr-3">
+            <img className="inline-block w-28 h-28 rounded" src="./images/avatar.png" alt="" />
+          </div>
+          <div>
+            <span className='text-4xl font-bold'>Yurii Herula</span>
+            <h3>Full Stack Software Engineer</h3>
         <SocialGroup />
+          </div>
+        </div>
         <hr style={{ height: 1, backgroundColor: '#ffffff7f', border: 'none', margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           {[
