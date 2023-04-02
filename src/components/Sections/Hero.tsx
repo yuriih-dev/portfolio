@@ -8,12 +8,12 @@ export default function Hero() {
       <div className="container">
         <div className="flex items-center mb-2">
           <div className="flex -space-x-1 overflow-hidden mr-3">
-            <img className="inline-block w-28 h-28 rounded" src="./images/avatar.png" alt="" />
+            <img className="inline-block w-24 h-24 sm:w-28 sm:h-28 rounded" src="./images/avatar.png" alt="" />
           </div>
           <div>
-            <span className='text-4xl font-bold'>Yurii Herula</span>
-            <h3>Full Stack Software Engineer</h3>
-        <SocialGroup />
+            <span className='text-2xl sm:text-4xl font-bold'>Yurii Herula</span>
+            <h3 className='text-base sm:text-2xl'>Full Stack Software Engineer</h3>
+            <SocialGroup />
           </div>
         </div>
         <hr style={{ height: 1, backgroundColor: '#ffffff7f', border: 'none', margin: '10px 0' }} />
