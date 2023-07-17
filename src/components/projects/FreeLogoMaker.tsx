@@ -12,7 +12,10 @@ export default function FreeLogoMaker() {
       </AspectView>
       <div className="p-1">
         <h3>Free Logo Maker</h3>
+        <div>
+          
         <p className="text-blue">Business Website</p>
+        </div>
         <div className="description">
           This is a logo maker website. Admin can add logo types (SVG) and the customers can build their logos based on different logo types. This is built with Laravel &amp;
           Vue.JS.
